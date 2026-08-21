@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Desktop app's local state -- personal to each machine, not shared.
+# web/data and web/images ARE committed: they're the published dataset the
+# phone reads, and act as the fallback when a scrape comes back empty.
+user_data/
+
+# Generated at runtime from ui/theme.py
+assets/ui/

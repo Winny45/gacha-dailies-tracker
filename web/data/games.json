@@ -1,0 +1,369 @@
+{
+ "generated_at": "2026-08-21T16:46:20.348105+00:00",
+ "games": [
+  {
+   "id": "brown_dust_2",
+   "name": "Brown Dust 2",
+   "accent": "#c084fc",
+   "icon": "icons/games/brown_dust_2.png",
+   "reset": {
+    "daily_hour_utc": 0,
+    "weekly_weekday": 0,
+    "weekly_hour_utc": 0,
+    "tz_note": "00:00 UTC daily, not DST-adjusted"
+   },
+   "tasks": [
+    {
+     "id": "brown_dust_2.featured_draws",
+     "label": "Collect free daily draws on featured banners",
+     "period": "daily",
+     "minutes": 1,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.mailbox",
+     "label": "Collect login/mailbox items",
+     "period": "daily",
+     "minutes": 1,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.rice",
+     "label": "Spend 60 cooked rice (Hunting Grounds)",
+     "period": "daily",
+     "minutes": 10,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.torches",
+     "label": "Spend 60 torches (Elemental Caves)",
+     "period": "daily",
+     "minutes": 10,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.pass_dailies",
+     "label": "Craft/dismantle/upgrade/refine gear (pass dailies)",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.field_finds",
+     "label": "Collect field finds and Gluttis",
+     "period": "daily",
+     "minutes": 3,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.mirror_wars_daily",
+     "label": "Battle in Mirror Wars (PvP)",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.territory",
+     "label": "Collect Territory dispatch + Last Night rewards",
+     "period": "daily",
+     "minutes": 2,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.mirror_wars_weekly",
+     "label": "Mirror Wars season ranking push (Mon-Sun)",
+     "period": "weekly",
+     "minutes": 15,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.guild_raid",
+     "label": "Guild Raid (Day1-3 prep, Day4-7 Boss Defense)",
+     "period": "weekly",
+     "minutes": 10,
+     "note": ""
+    },
+    {
+     "id": "brown_dust_2.pass_weekly",
+     "label": "Weekly/seasonal pass quests",
+     "period": "weekly",
+     "minutes": 5,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "nikke",
+   "name": "NIKKE",
+   "accent": "#ff4d6d",
+   "icon": "icons/games/nikke.png",
+   "reset": {
+    "daily_hour_utc": 20,
+    "weekly_weekday": 0,
+    "weekly_hour_utc": 20,
+    "tz_note": "game's reference timezone is UTC+9; daily reset ~05:00 UTC+9"
+   },
+   "tasks": [
+    {
+     "id": "nikke.sim_room",
+     "label": "Simulation Room (sectors A/B/C, 5 levels)",
+     "period": "daily",
+     "minutes": 8,
+     "note": ""
+    },
+    {
+     "id": "nikke.outpost",
+     "label": "Outpost Defense 'Wipe Out' (1 free + paid refills)",
+     "period": "daily",
+     "minutes": 3,
+     "note": ""
+    },
+    {
+     "id": "nikke.tribe_tower",
+     "label": "Tribe Tower challenges (today's rotating manufacturer)",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "nikke.daily_quests",
+     "label": "Day-by-day daily quests",
+     "period": "daily",
+     "minutes": 2,
+     "note": ""
+    },
+    {
+     "id": "nikke.advice",
+     "label": "Advice sessions (daily free counseling)",
+     "period": "daily",
+     "minutes": 3,
+     "note": ""
+    },
+    {
+     "id": "nikke.interception",
+     "label": "Interception attempts (if boss window active)",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "nikke.weekly_quests",
+     "label": "Weekly mission set",
+     "period": "weekly",
+     "minutes": 3,
+     "note": ""
+    },
+    {
+     "id": "nikke.coop",
+     "label": "Co-op raid weekly attempts",
+     "period": "weekly",
+     "minutes": 10,
+     "note": ""
+    },
+    {
+     "id": "nikke.special_archive",
+     "label": "Special Archive / story limited attempts",
+     "period": "weekly",
+     "minutes": 15,
+     "note": ""
+    },
+    {
+     "id": "nikke.weekly_mail",
+     "label": "Claim weekly gifts/mail",
+     "period": "weekly",
+     "minutes": 2,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "blue_archive",
+   "name": "Blue Archive",
+   "accent": "#4da3ff",
+   "icon": "icons/games/blue_archive.png",
+   "reset": {
+    "daily_hour_utc": 19,
+    "weekly_weekday": 0,
+    "weekly_hour_utc": 19,
+    "tz_note": "04:00 JST daily / 04:00 JST Tuesday (weekly)"
+   },
+   "tasks": [
+    {
+     "id": "blue_archive.cafe",
+     "label": "Open Cafe / collect Bond points",
+     "period": "daily",
+     "minutes": 2,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.lesson",
+     "label": "Hold a Lesson x2",
+     "period": "daily",
+     "minutes": 2,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.ap_recharge",
+     "label": "Use an AP recharge",
+     "period": "daily",
+     "minutes": 1,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.bounty",
+     "label": "Clear Bounty x3",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.commission",
+     "label": "Clear Commissions",
+     "period": "daily",
+     "minutes": 2,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.scrimmage",
+     "label": "Clear Scrimmage (PvP) x1",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.craft",
+     "label": "Craft an item",
+     "period": "daily",
+     "minutes": 2,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.missions",
+     "label": "Clear daily Missions/Hard stages",
+     "period": "daily",
+     "minutes": 10,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.lesson_w",
+     "label": "Hold Lesson x9 (weekly total)",
+     "period": "weekly",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.bounty_w",
+     "label": "Clear Bounty (weekly total)",
+     "period": "weekly",
+     "minutes": 10,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.scrimmage_w",
+     "label": "Clear Scrimmage (weekly total)",
+     "period": "weekly",
+     "minutes": 10,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.hard_w",
+     "label": "Clear Hard stages (weekly total)",
+     "period": "weekly",
+     "minutes": 15,
+     "note": ""
+    },
+    {
+     "id": "blue_archive.total_assault",
+     "label": "Total Assault raid (when active: 3 tickets/day, ~biweekly 7-day window)",
+     "period": "weekly",
+     "minutes": 10,
+     "note": "Not always active -- check Events tab for current window."
+    }
+   ]
+  },
+  {
+   "id": "limbus",
+   "name": "Limbus Company",
+   "accent": "#f5c518",
+   "icon": "icons/games/limbus.png",
+   "reset": {
+    "daily_hour_utc": 21,
+    "weekly_weekday": 3,
+    "weekly_hour_utc": 21,
+    "tz_note": "06:00 KST daily / 06:00 KST Friday (weekly)"
+   },
+   "tasks": [
+    {
+     "id": "limbus.enkephalin",
+     "label": "Assemble 1 Enkephalin Module",
+     "period": "daily",
+     "minutes": 1,
+     "note": ""
+    },
+    {
+     "id": "limbus.exp_lux",
+     "label": "Clear EXP Luxcavation x1",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "limbus.thread_lux",
+     "label": "Clear Thread Luxcavation x1 (first 3/day = double Thread)",
+     "period": "daily",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "limbus.any_stage_2",
+     "label": "Clear any stage x2",
+     "period": "daily",
+     "minutes": 6,
+     "note": ""
+    },
+    {
+     "id": "limbus.defeat_10",
+     "label": "Defeat 10 enemies",
+     "period": "daily",
+     "minutes": 3,
+     "note": ""
+    },
+    {
+     "id": "limbus.exp_lux_w",
+     "label": "Clear EXP Luxcavation x5",
+     "period": "weekly",
+     "minutes": 20,
+     "note": ""
+    },
+    {
+     "id": "limbus.thread_lux_w",
+     "label": "Clear Thread Luxcavation x5",
+     "period": "weekly",
+     "minutes": 20,
+     "note": ""
+    },
+    {
+     "id": "limbus.any_stage_10",
+     "label": "Clear any stage x10",
+     "period": "weekly",
+     "minutes": 25,
+     "note": ""
+    },
+    {
+     "id": "limbus.defeat_100",
+     "label": "Defeat 100 enemies",
+     "period": "weekly",
+     "minutes": 5,
+     "note": ""
+    },
+    {
+     "id": "limbus.mirror_dungeon",
+     "label": "Enter Mirror Dungeon x1 (3 weekly bonus charges)",
+     "period": "weekly",
+     "minutes": 30,
+     "note": ""
+    }
+   ]
+  }
+ ]
+}
