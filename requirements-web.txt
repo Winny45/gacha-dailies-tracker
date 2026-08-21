@@ -1,0 +1,7 @@
+# Dependencies for the data build only (build_web.py).
+# Deliberately excludes PySide6 -- CI never renders the desktop UI, and it's
+# a ~100MB install. ui/theme.py imports Qt lazily so this stays importable.
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+python-dateutil>=2.9

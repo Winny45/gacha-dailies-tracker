@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gacha Dailies</title>
+<meta name="theme-color" content="#0e1017">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="appbar">
+  <div class="brand">
+    <span class="diamond"></span>
+    <div>
+      <h1>Gacha Dailies</h1>
+      <p id="updated">Loading…</p>
+    </div>
+  </div>
+  <button id="reload" class="icon-btn" aria-label="Reload data">⟳</button>
+</header>
+
+<nav id="tabs" class="tabs" role="tablist"></nav>
+
+<main id="view"></main>
+
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-backdrop" data-close></div>
+  <section class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="sheet-grab"></div>
+    <div class="sheet-head">
+      <h2 id="sheet-title">Banner Guide</h2>
+      <button class="icon-btn" data-close aria-label="Close">✕</button>
+    </div>
+    <div id="sheet-body" class="sheet-body"></div>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

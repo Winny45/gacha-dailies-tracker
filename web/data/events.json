@@ -1,0 +1,357 @@
+{
+ "generated_at": "2026-08-21T16:46:23.022247+00:00",
+ "games": {
+  "brown_dust_2": {
+   "current": [
+    {
+     "title": "Helena -- Sunny Inn Hand",
+     "category": "banner",
+     "start": "2026-08-13T00:00:00",
+     "end": "2026-08-26T00:00:00",
+     "when": "2026-08-13 - 2026-08-26 (14 days)",
+     "image": "images/5e9c4dbfedd586791b9df10dab49dbb0200e4d6f.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    },
+    {
+     "title": "Yuri -- Comeback Idol",
+     "category": "banner",
+     "start": "2026-07-30T00:00:00",
+     "end": "2026-08-26T00:00:00",
+     "when": "2026-07-30 - 2026-08-26 (28 days)",
+     "image": "images/fbbd4e7d9ac48194e75907613d3dfcc8e711603c.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    },
+    {
+     "title": "Sylvia -- The Sword Queen",
+     "category": "banner",
+     "start": "2026-07-30T00:00:00",
+     "end": "2026-08-26T00:00:00",
+     "when": "2026-07-30 - 2026-08-26 (28 days)",
+     "image": "images/04e8e1cdb1ef94eee6babec40bbcd891c0c10c78.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    },
+    {
+     "title": "Alec -- The Destruction",
+     "category": "banner",
+     "start": "2026-08-20T00:00:00",
+     "end": "2026-08-26T00:00:00",
+     "when": "2026-08-20 - 2026-08-26 (7 days)",
+     "image": "images/74edd0701f66e5e09197308e1996cf28c0a9cb59.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    },
+    {
+     "title": "Dalvi -- Bright Moon",
+     "category": "banner",
+     "start": "2026-08-13T00:00:00",
+     "end": "2026-09-09T00:00:00",
+     "when": "2026-08-13 - 2026-09-09 (28 days)",
+     "image": "images/641d2210ae1de0afecf1a936198fcfc48c951bb4.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    }
+   ],
+   "upcoming": [
+    {
+     "title": "Aquila -- Savage Warrior",
+     "category": "banner",
+     "start": "2026-08-27T00:00:00",
+     "end": "2026-09-09T00:00:00",
+     "when": "2026-08-27 - 2026-09-09 (14 days)",
+     "image": "",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    },
+    {
+     "title": "Blade -- Young Lady",
+     "category": "banner",
+     "start": "2026-08-27T00:00:00",
+     "end": "2026-09-23T00:00:00",
+     "when": "2026-08-27 - 2026-09-23 (28 days)",
+     "image": "images/1ca6d7701727c0d7fffb73b34f16ff695a77be5e.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    }
+   ]
+  },
+  "nikke": {
+   "current": [
+    {
+     "title": "Persona Collab: Queen (Makoto Nijima)",
+     "category": "banner",
+     "start": "2026-08-13T00:00:00",
+     "end": null,
+     "when": "Starts 2026-08-13",
+     "image": "images/9df9b52a63571024a6bf0c00d0d9825340cb2857.webp",
+     "source_name": "hostedgg.com",
+     "source_url": "https://hostedgg.com/wiki/nikke/banners"
+    },
+    {
+     "title": "Persona Collab: Yukiko",
+     "category": "banner",
+     "start": "2026-08-13T00:00:00",
+     "end": null,
+     "when": "Starts 2026-08-13",
+     "image": "images/d2127017a1ed977bafcbddc8c378df1f0b8ae6e1.webp",
+     "source_name": "hostedgg.com",
+     "source_url": "https://hostedgg.com/wiki/nikke/banners"
+    }
+   ],
+   "upcoming": []
+  },
+  "blue_archive": {
+   "current": [
+    {
+     "title": "Triple NormalMissionsrewards",
+     "category": "event",
+     "start": "2026-08-19T04:00:00",
+     "end": "2026-08-23T03:59:00",
+     "when": "08/19/2026 04:00 - 08/23/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Pandemic Hazard \uff5e Miracle Pancake \uff5e",
+     "category": "event",
+     "start": "2026-08-12T00:00:00",
+     "end": "2026-08-26T00:00:00",
+     "when": "2026-08-12 - 2026-08-26",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "TripleCommissionsrewards",
+     "category": "event",
+     "start": "2026-08-19T04:00:00",
+     "end": "2026-08-26T03:59:00",
+     "when": "08/19/2026 04:00 - 08/26/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "5.5 Anniversary Login Bonus",
+     "category": "event",
+     "start": "2026-07-29T11:00:00",
+     "end": "2026-08-26T10:59:00",
+     "when": "07/29/2026 11:00 - 08/26/2026 10:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Special Mission: Lore Pursuit",
+     "category": "event",
+     "start": "2026-08-18T00:00:00",
+     "end": "2026-09-01T00:00:00",
+     "when": "2026-08-18 - 2026-09-01",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Niko",
+     "category": "banner",
+     "start": "2026-08-18T11:00:00",
+     "end": "2026-09-01T10:59:00",
+     "when": "2026/08/18 11:00 \u2014 2026/09/01 10:59",
+     "image": "images/1911b28e8b39d21e7348d86ff5e6e30d36d1bd38.png",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
+    },
+    {
+     "title": "Kurumi",
+     "category": "banner",
+     "start": "2026-08-18T11:00:00",
+     "end": "2026-09-01T10:59:00",
+     "when": "2026/08/18 11:00 \u2014 2026/09/01 10:59",
+     "image": "images/f4c2ea9edfdce473b4a2febf241f70c52df746b4.png",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
+    },
+    {
+     "title": "Night shift guide mission!",
+     "category": "event",
+     "start": "2024-01-25T11:00:00",
+     "end": "2125-12-31T00:00:00",
+     "when": "01/25/2024 11:00 - 12/31/2125 00:00",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Hospitality Tea Time",
+     "category": "event",
+     "start": "2025-07-22T11:00:00",
+     "end": "2125-12-31T00:00:00",
+     "when": "07/22/2025 11:00 - 12/31/2125 00:00",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    }
+   ],
+   "upcoming": [
+    {
+     "title": "Double level EXP",
+     "category": "event",
+     "start": "2026-08-22T04:00:00",
+     "end": "2026-08-24T03:59:00",
+     "when": "08/22/2026 04:00 - 08/24/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Triple HardMissionsrewards",
+     "category": "event",
+     "start": "2026-08-23T04:00:00",
+     "end": "2026-08-26T03:59:00",
+     "when": "08/23/2026 04:00 - 08/26/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Pray-Ball! Swing for the Grand Slam!",
+     "category": "event",
+     "start": "2026-09-01T00:00:00",
+     "end": "2026-09-15T00:00:00",
+     "when": "2026-09-01 - 2026-09-15",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Sumire (Part-Timer) rerun",
+     "category": "banner",
+     "start": "2026-09-01T11:00:00",
+     "end": "2026-09-08T10:59:00",
+     "when": "2026/09/01 11:00 \u2014 2026/09/08 10:59",
+     "image": "images/340e7c19d4f33a53fd6b0e3e374663c067c17f9c.png",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
+    },
+    {
+     "title": "Rei rerun",
+     "category": "banner",
+     "start": "2026-09-01T11:00:00",
+     "end": "2026-09-08T10:59:00",
+     "when": "2026/09/01 11:00 \u2014 2026/09/08 10:59",
+     "image": "images/29d3d5b1d85b92aeeb5b1d5140bc0076c153f0e6.png",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
+    },
+    {
+     "title": "Akari (New Year) rerun",
+     "category": "banner",
+     "start": "2026-09-01T11:00:00",
+     "end": "2026-09-08T10:59:00",
+     "when": "2026/09/01 11:00 \u2014 2026/09/08 10:59",
+     "image": "images/4008f9d55329ad5356dfa17d9bc015c49786cc36.png",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
+    },
+    {
+     "title": "Izumi (New Year) rerun",
+     "category": "banner",
+     "start": "2026-09-01T11:00:00",
+     "end": "2026-09-08T10:59:00",
+     "when": "2026/09/01 11:00 \u2014 2026/09/08 10:59",
+     "image": "images/b8bac144e6c68de20200a680dbc7aedafe4f2fa2.png",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
+    },
+    {
+     "title": "Haruka (New Year) rerun",
+     "category": "banner",
+     "start": "2026-09-01T11:00:00",
+     "end": "2026-09-08T10:59:00",
+     "when": "2026/09/01 11:00 \u2014 2026/09/08 10:59",
+     "image": "images/41c3c7b14b07585d8c93666b77775be2d7f03ff0.png",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
+    },
+    {
+     "title": "Defense Exercise",
+     "category": "event",
+     "start": "2026-09-01T11:00:00",
+     "end": "2026-09-08T03:59:00",
+     "when": "09/01/2026 11:00 - 09/08/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Shooting Exercise",
+     "category": "event",
+     "start": "2026-09-09T11:00:00",
+     "end": "2026-09-16T03:59:00",
+     "when": "09/09/2026 11:00 - 09/16/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    }
+   ]
+  },
+  "limbus": {
+   "current": [
+    {
+     "title": "New Manager Attendance Check Event",
+     "category": "event",
+     "start": null,
+     "end": "2026-08-30T00:00:00",
+     "when": "Initial Account Creation - 30 Days after Account Creation",
+     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
+    },
+    {
+     "title": "Cinq Assoc. East Section 3 Hong Lu",
+     "category": "banner",
+     "start": "2026-08-20T12:00:00",
+     "end": "2026-09-03T10:00:00",
+     "when": "2026.8.20 12:00 - 2026.9.3 10:00",
+     "image": "images/399855c0b44412fa7c7448768e827532ba06c699.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "Everlasting Faust",
+     "category": "banner",
+     "start": "2026-08-20T12:00:00",
+     "end": "2026-09-03T10:00:00",
+     "when": "2026.8.20 12:00 - 2026.9.3 10:00",
+     "image": "images/1af1d9e3b9fa034edd3faa2f334288e2608105dd.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "Daily Check-in",
+     "category": "event",
+     "start": "2026-08-20T00:00:00",
+     "end": "2026-09-17T00:00:00",
+     "when": "August 20th, 2026 - September 17th, 2026",
+     "image": "images/ce66aa23833df6dcb4b5d9b569582dc456791ad9.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
+    },
+    {
+     "title": "Daily Check-in",
+     "category": "event",
+     "start": "2026-08-20T12:00:00",
+     "end": "2026-09-17T06:00:00",
+     "when": "August 20, 2026 12:00 - September 17, 2026 06:00",
+     "image": "images/ce66aa23833df6dcb4b5d9b569582dc456791ad9.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
+    }
+   ],
+   "upcoming": []
+  }
+ }
+}
