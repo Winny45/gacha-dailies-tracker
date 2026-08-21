@@ -1,10 +1,76 @@
 # Gacha Dailies Tracker
 
-Desktop app (Python + PySide6) that tracks daily/weekly checklists and
-upcoming events/banners for NIKKE, Blue Archive, Limbus Company, and Brown
-Dust 2.
+Tracks daily/weekly checklists and upcoming events/banners for NIKKE, Blue
+Archive, Limbus Company, and Brown Dust 2.
 
-## Running it
+Two front-ends, one set of scrapers:
+
+| | What it is | Where the data comes from |
+|---|---|---|
+| **Desktop** | Python + PySide6 app (`app.py`) | scrapes live when you hit Refresh |
+| **Phone** | installable web app in `web/` | reads JSON published by GitHub Actions |
+
+---
+
+## Putting it on your phone
+
+The desktop app can't be ported to Android — Qt's Android deployment is
+experimental and `lxml` (a C extension) would need ARM cross-compilation.
+So the phone gets a **PWA**: a web app that installs to the home screen
+with its own icon, runs fullscreen with no browser chrome, and works
+offline. It reuses the same Python scrapers via `build_web.py`.
+
+### One-time setup
+
+1. Create an empty repo on GitHub (any name, public — Pages is free for
+   public repos).
+2. From this folder, push:
+
+```bash
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
+```
+
+```bash
+git push -u origin main
+```
+
+3. In the repo: **Settings → Pages → Build and deployment → Source →
+   GitHub Actions**.
+4. Open the **Actions** tab and let the "Update data & deploy" workflow
+   run (or trigger it with *Run workflow*).
+5. On your phone, open `https://YOUR-USERNAME.github.io/YOUR-REPO/`, then
+   Chrome menu → **Add to Home screen**.
+
+After that it behaves like any installed app. The workflow re-scrapes and
+redeploys **every day at 06:00 UTC**, so the phone stays current without
+you doing anything — that's why its ⟳ button just reloads the published
+data rather than scraping (phone browsers can't scrape those sites
+directly; none of them send CORS headers).
+
+### Notes
+
+- **Checklists are per device.** Ticking something on the phone doesn't
+  update the desktop app, by design — no account or server needed.
+- The phone app ships only the portraits for banners that are live or
+  upcoming (~1 MB total) rather than the whole image cache.
+- If a source is down when the workflow runs, that game keeps its last
+  published data instead of going blank.
+
+### Running the phone app locally (optional)
+
+```bash
+.venv\Scripts\python.exe build_web.py
+```
+
+```bash
+.venv\Scripts\python.exe -m http.server 8765 --directory web
+```
+
+Then visit `http://localhost:8765`.
+
+---
+
+## Running the desktop app
 
 Double-click **`Launch Gacha Dailies Tracker.bat`**, or run it manually:
 
