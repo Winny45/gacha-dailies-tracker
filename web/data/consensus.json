@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-23T06:49:45.225920+00:00",
+ "generated_at": "2026-08-24T07:08:11.927343+00:00",
  "verdicts": {
   "brown_dust_2:helena sunny inn hand": {
    "label": "Strong Pull",
@@ -191,14 +191,22 @@
    ]
   },
   "nikke:persona collab yukiko": {
-   "label": "No consensus data",
-   "score": null,
+   "label": "Good Pull",
+   "score": 3.9,
    "sources": [
     {
      "name": "hostedgg.com",
      "url": "https://hostedgg.com/wiki/nikke/banners",
      "verdict": "",
      "analysis": "The second collab limited SSR, a Fire Code Attacker with a machine gun. Same logic as Queen: limited collab units are a now-or-never pull, so prioritize whichever fits your squad rather than splitting a small reserve across both.",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/nikke/tier-list",
+     "verdict": "A",
+     "analysis": "",
      "pros": [],
      "cons": []
     }

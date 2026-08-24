@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-23T06:49:45.215864+00:00",
+ "generated_at": "2026-08-24T07:08:11.926863+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -85,7 +85,7 @@
      "start": "2026-08-13T00:00:00",
      "end": null,
      "when": "Starts 2026-08-13",
-     "image": "images/9df9b52a63571024a6bf0c00d0d9825340cb2857.webp",
+     "image": "",
      "source_name": "hostedgg.com",
      "source_url": "https://hostedgg.com/wiki/nikke/banners"
     },
@@ -104,16 +104,6 @@
   },
   "blue_archive": {
    "current": [
-    {
-     "title": "Double level EXP",
-     "category": "event",
-     "start": "2026-08-22T04:00:00",
-     "end": "2026-08-24T03:59:00",
-     "when": "08/22/2026 04:00 - 08/24/2026 03:59",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
     {
      "title": "Pandemic Hazard \uff5e Miracle Pancake \uff5e",
      "category": "event",
