@@ -1,0 +1,996 @@
+<title>Lee Shore Mallorca</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --ground:#e7eef0; --surface:#f8fbfb; --surface-2:#dde8ea; --sunk:#d3e0e3;
+  --ink:#0b232e; --ink-soft:#415c66; --ink-faint:#7b939a;
+  --line:#c2d2d6; --line-soft:#d8e3e5;
+  --accent:#0f7d8b; --accent-deep:#0a5b66; --accent-wash:#dcecee;
+  --good:#2c7a58; --ok:#0f7d8b; --warn:#b3801a; --bad:#a8452e;
+  --seagrass:#5c7b3c;
+  --chart:#9ec1c8;
+  --shadow:0 1px 2px rgba(11,35,46,.06),0 8px 24px -12px rgba(11,35,46,.28);
+  --r:3px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#06181f; --surface:#0d2731; --surface-2:#12333e; --sunk:#0a222b;
+    --ink:#e2eef0; --ink-soft:#a0b9bf; --ink-faint:#6b8b94;
+    --line:#1d3f4b; --line-soft:#173440;
+    --accent:#43b8c4; --accent-deep:#83d8e0; --accent-wash:#11333c;
+    --good:#5cc091; --ok:#43b8c4; --warn:#dfb256; --bad:#e6836c;
+    --seagrass:#97ba6c;
+    --chart:#28525f;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#06181f; --surface:#0d2731; --surface-2:#12333e; --sunk:#0a222b;
+  --ink:#e2eef0; --ink-soft:#a0b9bf; --ink-faint:#6b8b94;
+  --line:#1d3f4b; --line-soft:#173440;
+  --accent:#43b8c4; --accent-deep:#83d8e0; --accent-wash:#11333c;
+  --good:#5cc091; --ok:#43b8c4; --warn:#dfb256; --bad:#e6836c;
+  --seagrass:#97ba6c;
+  --chart:#28525f;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.55;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-weight:400}
+p{margin:0}
+button{font:inherit; color:inherit}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+.tnum{font-variant-numeric:tabular-nums}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ink-faint);
+}
+
+/* ---------- shell ---------- */
+.wrap{max-width:1240px; margin:0 auto; padding:0 20px 72px}
+header.top{
+  border-bottom:1px solid var(--line); background:var(--surface);
+  position:relative; overflow:hidden;
+}
+header.top .wrap{padding-top:26px; padding-bottom:24px; display:flex; gap:24px; align-items:flex-end; flex-wrap:wrap}
+.brand h1{
+  font-family:"Instrument Serif",Georgia,serif; font-size:clamp(34px,5.2vw,52px);
+  line-height:1; letter-spacing:-.01em;
+}
+.brand h1 em{font-style:italic; color:var(--accent)}
+.brand p{color:var(--ink-soft); max-width:52ch; margin-top:10px; font-size:15px}
+.brand .eyebrow{margin-bottom:10px}
+.top-right{margin-left:auto; display:flex; gap:8px; align-items:center}
+.ghost{
+  background:transparent; border:1px solid var(--line); border-radius:var(--r);
+  padding:7px 12px; font-size:13px; cursor:pointer; color:var(--ink-soft);
+}
+.ghost:hover{border-color:var(--accent); color:var(--accent)}
+
+/* ---------- layout ---------- */
+.cols{display:grid; grid-template-columns:minmax(0,380px) minmax(0,1fr); gap:28px; margin-top:26px; align-items:start}
+@media (max-width:960px){.cols{grid-template-columns:1fr}}
+.rail{position:sticky; top:16px; display:flex; flex-direction:column; gap:16px}
+@media (max-width:960px){.rail{position:static}}
+
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow)}
+.panel-h{
+  display:flex; align-items:baseline; justify-content:space-between; gap:10px;
+  padding:12px 16px; border-bottom:1px solid var(--line-soft);
+}
+.panel-b{padding:16px}
+
+/* ---------- compass ---------- */
+.rose-wrap{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
+@media (max-width:520px){.rose-wrap{justify-content:center} .wind-read{text-align:center}}
+.rose{width:186px; height:186px; flex:none; touch-action:none; cursor:grab; display:block}
+.rose:active{cursor:grabbing}
+.rose .ring{fill:var(--sunk); stroke:var(--line)}
+.rose .tick{stroke:var(--line)}
+.rose .card-l{fill:var(--ink-faint); font-family:"IBM Plex Mono",monospace; font-size:9px; letter-spacing:.08em}
+.rose .arrowhead{fill:var(--accent)}
+.rose .arrowline{stroke:var(--accent); stroke-width:2.5; stroke-linecap:round}
+.rose .hub{fill:var(--surface); stroke:var(--accent)}
+.rose .gust{fill:none; stroke:var(--accent); opacity:.32}
+.wind-read{min-width:130px; flex:1}
+.wind-read .name{font-family:"Instrument Serif",Georgia,serif; font-size:30px; line-height:1.05}
+.wind-read .from{color:var(--ink-faint); font-size:12px; letter-spacing:.02em}
+.wind-read .kts{font-size:13px; color:var(--ink-soft); margin-top:6px}
+
+.field{display:block; margin-top:14px}
+.field > .eyebrow{display:block; margin-bottom:6px}
+select, input[type=range]{width:100%}
+select{
+  appearance:none; background:var(--surface-2); border:1px solid var(--line);
+  color:var(--ink); border-radius:var(--r); padding:9px 30px 9px 10px; font-size:14px; cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 16px) 55%,calc(100% - 11px) 55%;
+  background-size:5px 5px,5px 5px; background-repeat:no-repeat;
+}
+input[type=range]{accent-color:var(--accent); margin:4px 0}
+.seg{display:flex; gap:0; border:1px solid var(--line); border-radius:var(--r); overflow:hidden}
+.seg button{
+  flex:1; background:var(--surface-2); border:0; border-right:1px solid var(--line);
+  padding:8px 4px; font-size:13px; cursor:pointer; color:var(--ink-soft);
+}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent); color:var(--ground); font-weight:500}
+.hint{font-size:12px; color:var(--ink-faint); margin-top:8px; line-height:1.45}
+
+/* ---------- map ---------- */
+.map-panel .panel-b{padding:8px 8px 12px}
+svg.chart{width:100%; height:auto; display:block; touch-action:manipulation}
+.chart .sea{fill:var(--sunk)}
+.chart .land{fill:var(--surface-2); stroke:none}
+.chart .seg-line{stroke-width:3.2; stroke-linecap:round; fill:none}
+.chart .grat{stroke:var(--line-soft); stroke-width:.5}
+.chart .pt{cursor:pointer}
+.chart .pt circle{stroke:var(--surface); stroke-width:1.4}
+.chart .pt.sel circle{stroke:var(--ink); stroke-width:2}
+.chart .port{fill:var(--surface); stroke:var(--ink); stroke-width:1.6}
+.chart .lbl{font-family:"IBM Plex Mono",monospace; font-size:8.5px; fill:var(--ink-faint); letter-spacing:.06em; pointer-events:none}
+.chart #marks,.chart #chart-wind{pointer-events:none}
+.legend{display:flex; gap:14px; flex-wrap:wrap; padding:6px 8px 0; font-size:11px; color:var(--ink-faint)}
+.legend span{display:flex; align-items:center; gap:5px}
+.swatch{width:16px; height:4px; border-radius:2px; display:inline-block}
+
+/* ---------- results ---------- */
+.results-h{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:12px}
+.results-h h2{font-family:"Instrument Serif",Georgia,serif; font-size:26px}
+.count{font-size:13px; color:var(--ink-faint)}
+.list{display:flex; flex-direction:column; gap:10px}
+.card{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r);
+  display:grid; grid-template-columns:8px 1fr; overflow:hidden; box-shadow:var(--shadow);
+}
+.card .stripe{background:var(--v-col)}
+.card-in{padding:13px 15px 14px; min-width:0}
+.card-top{display:flex; gap:12px; align-items:flex-start}
+.card h3{font-family:"Instrument Serif",Georgia,serif; font-size:22px; line-height:1.15}
+.card h3 .sub{display:block; font-family:"Public Sans",sans-serif; font-size:12.5px; color:var(--ink-faint); line-height:1.4; margin-top:2px}
+.verdict{
+  margin-left:auto; flex:none; text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:3px;
+}
+.chip{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+  border:1px solid var(--v-col); color:var(--v-col); padding:2px 7px; border-radius:100px; white-space:nowrap;
+}
+.chip.fill{background:var(--v-col); color:var(--surface); border-color:var(--v-col)}
+.meta{
+  display:flex; gap:0 18px; flex-wrap:wrap; margin-top:10px; font-size:12.5px; color:var(--ink-soft);
+  font-family:"IBM Plex Mono",monospace;
+}
+.meta b{font-weight:500; color:var(--ink)}
+.blurb{margin-top:9px; font-size:14.5px; color:var(--ink-soft); max-width:66ch}
+.tags{display:flex; gap:6px; flex-wrap:wrap; margin-top:10px}
+.tag{font-size:11px; color:var(--ink-faint); border:1px solid var(--line-soft); border-radius:100px; padding:1px 8px}
+.tag.pos{color:var(--seagrass); border-color:var(--seagrass)}
+.card-actions{display:flex; gap:8px; margin-top:12px; align-items:center}
+.link-btn{background:none; border:0; padding:0; color:var(--accent); font-size:13px; cursor:pointer; text-decoration:underline; text-underline-offset:3px}
+.star{background:none; border:1px solid var(--line); border-radius:var(--r); padding:4px 9px; font-size:12px; cursor:pointer; color:var(--ink-faint)}
+.star[aria-pressed="true"]{color:var(--warn); border-color:var(--warn)}
+.detail{display:none; margin-top:12px; border-top:1px solid var(--line-soft); padding-top:12px}
+.card.open .detail{display:block}
+.dl{display:grid; grid-template-columns:118px 1fr; gap:7px 14px; font-size:14px}
+.dl dt{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-faint); padding-top:3px}
+.dl dd{margin:0; color:var(--ink-soft)}
+.dl dd.grass{color:var(--seagrass)}
+.dl dd.care{color:var(--bad)}
+.card.dim{opacity:.62}
+.empty{border:1px dashed var(--line); border-radius:var(--r); padding:22px; text-align:center; color:var(--ink-soft); font-size:14px}
+details.more{margin-top:18px; border-top:1px solid var(--line); padding-top:14px}
+details.more summary{cursor:pointer; font-size:13px; color:var(--ink-soft); list-style:none}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::before{content:"▸ "; color:var(--ink-faint)}
+details.more[open] summary::before{content:"▾ "}
+details.more .list{margin-top:12px}
+
+/* ---------- rules ---------- */
+.rules{margin-top:34px; border-top:1px solid var(--line); padding-top:22px}
+.rules h2{font-family:"Instrument Serif",Georgia,serif; font-size:26px; margin-bottom:4px}
+.rules .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:16px}
+.rule{border-left:2px solid var(--seagrass); padding-left:13px}
+.rule.blue{border-left-color:var(--accent)}
+.rule.red{border-left-color:var(--bad)}
+.rule h3{font-size:15px; font-weight:700; font-family:"Public Sans",sans-serif; margin-bottom:4px}
+.rule p{font-size:13.5px; color:var(--ink-soft)}
+footer{margin-top:30px; padding-top:16px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-faint); max-width:80ch}
+@media (prefers-reduced-motion:reduce){*{animation:none !important; transition:none !important}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <div class="eyebrow">Mallorca &middot; day-trip planner by sea</div>
+      <h1>Where's the <em>lee</em> today?</h1>
+      <p>Set the wind, pick your harbour, and see which coves are flat, which are workable,
+         and which will spit you back out. Every trip is scored against the coast it opens onto.</p>
+    </div>
+    <div class="top-right">
+      <button class="ghost" id="theme-btn" type="button">Dark</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="cols">
+    <!-- ================= LEFT RAIL ================= -->
+    <div class="rail">
+      <section class="panel">
+        <div class="panel-h"><span class="eyebrow">Today's wind</span><span class="eyebrow" id="beaufort">F3</span></div>
+        <div class="panel-b">
+          <div class="rose-wrap">
+            <svg class="rose" id="rose" viewBox="0 0 200 200" role="slider" tabindex="0"
+                 aria-label="Wind direction" aria-valuemin="0" aria-valuemax="359" aria-valuenow="0" aria-valuetext="North">
+              <circle class="ring" cx="100" cy="100" r="82" stroke-width="1"></circle>
+              <circle class="ring" cx="100" cy="100" r="62" fill="none" stroke-dasharray="2 4"></circle>
+              <g id="rose-ticks"></g>
+              <g id="rose-labels"></g>
+              <g id="rose-arrow">
+                <path class="gust" d="M70 44 A 42 42 0 0 1 130 44" stroke-width="1.5"></path>
+                <line class="arrowline" x1="100" y1="100" x2="100" y2="34"></line>
+                <path class="arrowhead" d="M100 100 L92 82 L108 82 Z"></path>
+              </g>
+              <circle class="hub" cx="100" cy="100" r="6" stroke-width="1.5"></circle>
+            </svg>
+            <div class="wind-read">
+              <div class="name" id="wind-name">Tramuntana</div>
+              <div class="from mono" id="wind-deg">from 000&deg; &middot; N</div>
+              <div class="kts">Drag the rose, or use the arrow keys.</div>
+            </div>
+          </div>
+
+          <label class="field">
+            <span class="eyebrow">Strength &mdash; <span id="kts-read" class="tnum">12 kn</span></span>
+            <input type="range" id="kts" min="0" max="38" step="1" value="12">
+          </label>
+          <p class="hint" id="kts-hint"></p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-h"><span class="eyebrow">Your day</span></div>
+        <div class="panel-b">
+          <label class="field">
+            <span class="eyebrow">Leaving from</span>
+            <select id="port"></select>
+          </label>
+          <label class="field">
+            <span class="eyebrow">Boat</span>
+            <select id="boat"></select>
+          </label>
+          <div class="field">
+            <span class="eyebrow">Hours you have</span>
+            <div class="seg" id="hours"></div>
+          </div>
+          <p class="hint" id="boat-hint"></p>
+        </div>
+      </section>
+
+      <section class="panel map-panel">
+        <div class="panel-h"><span class="eyebrow">Exposure chart</span><span class="eyebrow">schematic</span></div>
+        <div class="panel-b">
+          <svg class="chart" id="chart" viewBox="0 0 420 360" aria-label="Schematic chart of Mallorca with coastline shaded by exposure to the selected wind"></svg>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--good)"></i> lee shore</span>
+            <span><i class="swatch" style="background:var(--warn)"></i> beam-on</span>
+            <span><i class="swatch" style="background:var(--bad)"></i> wind straight in</span>
+            <span><i class="swatch" style="background:var(--ink);height:8px;width:8px;border-radius:50%"></i> harbour</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= RESULTS ================= -->
+    <div>
+      <div class="results-h">
+        <h2 id="results-title">Best runs today</h2>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="list" id="list"></div>
+      <details class="more" id="more">
+        <summary><span id="more-label">Out of reach today</span></summary>
+        <div class="list" id="list-out"></div>
+      </details>
+
+      <section class="rules">
+        <h2>Before you drop the hook</h2>
+        <p class="hint" style="font-size:13.5px">Four things that turn a good day into an expensive one.</p>
+        <div class="grid">
+          <div class="rule">
+            <h3>Anchor on sand, never on Posidonia</h3>
+            <p>The dark meadows under you are protected seagrass. Balearic law (Decree 25/2018) requires you to
+               drop on a clear sand patch &mdash; look for the pale ground, or check a Posidonia layer before you let go.
+               Fines are real and start in the thousands.</p>
+          </div>
+          <div class="rule blue">
+            <h3>Cabrera needs a permit</h3>
+            <p>The national park allows a fixed number of mooring buoys per night and they are booked online,
+               in advance, through the Balearic government. Turning up without one is not a plan.</p>
+          </div>
+          <div class="rule blue">
+            <h3>Three knots inside the buoys</h3>
+            <p>Keep to 3 knots within 300&nbsp;m of any beach, stay outside the yellow swim-zone buoys, and
+               land people by dinghy or by swimming &mdash; not by nosing the boat onto the sand.</p>
+          </div>
+          <div class="rule red">
+            <h3>The swell outlasts the wind</h3>
+            <p>A Tramuntana that blew itself out overnight still leaves a northerly swell rolling into the
+               Serra coves the next morning. Check the wave forecast, not just the wind arrow.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p><b>How the scoring works:</b> each anchorage is stored with the compass direction it opens onto.
+        The app compares that to the wind you set, adds the fetch that coast is exposed to, and converts the
+        result into an effective sea state. Distances follow the coastline rather than a straight line, so
+        rounding a cape counts. Times assume the cruising speed of the boat you picked plus time at anchor.</p>
+        <p style="margin-top:8px">Planning aid only &mdash; not a substitute for a chart, a forecast, or your own judgement.
+        Check AEMET or Windy and the local port authority before you leave, and remember that headlands
+        (Formentor, Cap Blanc, Cap de ses Salines) accelerate the wind well above the number on the slider.</p>
+      </footer>
+    </div>
+  </div>
+</main>
+
+<script>
+(function(){
+"use strict";
+
+/* ============ the eight winds, as they are named here ============ */
+const WINDS = [
+  {deg:0,   short:"N",  name:"Tramuntana"},
+  {deg:45,  short:"NE", name:"Gregal"},
+  {deg:90,  short:"E",  name:"Llevant"},
+  {deg:135, short:"SE", name:"Xaloc"},
+  {deg:180, short:"S",  name:"Migjorn"},
+  {deg:225, short:"SW", name:"Llebeig"},
+  {deg:270, short:"W",  name:"Ponent"},
+  {deg:315, short:"NW", name:"Mestral"}
+];
+
+/* ============ harbours you can push off from ============ */
+const PORTS = [
+  {id:"andratx",  name:"Port d'Andratx",        lat:39.541, lon:2.389},
+  {id:"adriano",  name:"Port Adriano / Santa Ponsa", lat:39.494, lon:2.489},
+  {id:"palma",    name:"Palma",                 lat:39.556, lon:2.632},
+  {id:"arenal",   name:"S'Arenal / Can Pastilla", lat:39.520, lon:2.740},
+  {id:"rapita",   name:"Sa Rapita",             lat:39.345, lon:2.958},
+  {id:"jordi",    name:"Colonia de Sant Jordi", lat:39.317, lon:2.993},
+  {id:"calador",  name:"Cala d'Or / Portopetro",lat:39.373, lon:3.226},
+  {id:"portocolom",name:"Portocolom",           lat:39.418, lon:3.271},
+  {id:"portocristo",name:"Porto Cristo",        lat:39.535, lon:3.335},
+  {id:"ratjada",  name:"Cala Ratjada",          lat:39.714, lon:3.462},
+  {id:"alcudia",  name:"Port d'Alcudia",        lat:39.833, lon:3.132},
+  {id:"pollenca", name:"Port de Pollenca",      lat:39.907, lon:3.088},
+  {id:"soller",   name:"Port de Soller",        lat:39.797, lon:2.692}
+];
+
+/* ============ boats ============ */
+const BOATS = [
+  {id:"nolic", label:"Rental boat, no licence (15 hp)", speed:6,   seaLimit:11, range:14, windCap:17,
+   note:"Under 15 hp you are limited to daylight, fair weather and a few miles from shore. Rental firms pull the fleet in before most people notice the sea getting up."},
+  {id:"rib",   label:"RIB or speedboat (licence)",      speed:18,  seaLimit:19, range:55, windCap:25,
+   note:"Fast enough to outrun the afternoon sea breeze home, wet enough that you will feel every one of those knots on the nose."},
+  {id:"motor", label:"Skippered charter / motor yacht", speed:13,  seaLimit:26, range:80, windCap:31,
+   note:"A skipper buys you range and a second opinion. Agree the return time before you leave: the embat builds after lunch, every day, all summer."},
+  {id:"sail",  label:"Sailing yacht",                   speed:6.5, seaLimit:26, range:70, windCap:31,
+   note:"You are the only boat here that wants wind. Eight to sixteen knots is the sweet spot; below that the iron sail comes on."}
+];
+
+const HOURS = [3,4,6,8,10];
+
+/* ============ the trips ============
+   face  = compass direction the anchorage opens onto (wind from here blows straight in)
+   fetch = how much open water that exposure has to build a sea over
+   ashore= hours you will realistically spend stopped                                  */
+const TRIPS = [
+  {id:"dragonera", name:"Sa Dragonera", sub:"Cala Llado & the lighthouse island", lat:39.5875, lon:2.3268,
+   face:100, fetch:0.95, ashore:3, offshore:true, tags:["nature park","hike","snorkel"],
+   why:"An entire uninhabited island kept as a nature park: goats, Eleonora's falcons and two lighthouses at the end of a stony track. Tie up in Cala Llado, walk to Far de Tramuntana, swim in water you can count the stones through.",
+   anchor:"Park mooring buoys in Cala Llado, first come first served, plus a small jetty for the dinghy. Anchoring inside the reserve is restricted, so take a buoy and do not improvise.",
+   care:"The channel between Sant Elm and the island funnels the wind and runs a current. In anything from the north it is choppy in a way the forecast will not show you."},
+  {id:"santelm", name:"Sant Elm & Es Pantaleu", sub:"the last village on the west end", lat:39.578, lon:2.354,
+   face:265, fetch:0.8, ashore:2, tags:["beach","lunch ashore","easy"],
+   why:"A small sandy bay looking straight at Dragonera, with the islet of Es Pantaleu close enough to swim to. Beach restaurants a dinghy-ride away, and the shortest possible hop for a nervous first day.",
+   anchor:"Sand in patches between weed on the south side of the bay. Stay outside the swim buoys and drop where the bottom goes pale."},
+  {id:"llamp", name:"Cala Llamp & Cap de sa Mola", sub:"cliffs on the doorstep of Andratx", lat:39.535, lon:2.376,
+   face:225, fetch:0.85, ashore:1.5, tags:["cliffs","snorkel","short hop"],
+   why:"Ten minutes out of Port d'Andratx and the coast turns to rock walls dropping into deep blue. No beach, no crowd, just clear water under the cliffs and a terrace on the headland above.",
+   anchor:"Deep quickly: 8 to 12 m over sand in the middle of the cala. Rock close in on both sides."},
+  {id:"malgrats", name:"Illes Malgrats & El Toro", sub:"marine reserve off Santa Ponsa", lat:39.512, lon:2.470,
+   face:215, fetch:0.85, ashore:2, tags:["marine reserve","snorkel","family"],
+   why:"Two rocky islets inside a protected reserve where the fish have worked out nobody is allowed to catch them. The best easy snorkelling on this side of the island, ten minutes from Port Adriano.",
+   anchor:"Anchor on the sand shelf on the Mallorca side and swim across. Fishing is banned inside the reserve, anchoring is regulated, and the patrol boat does come round.",
+   care:"Open to the south-west. When the Llebeig fills in after lunch the channel gets untidy fast."},
+  {id:"portalsvells", name:"Portals Vells", sub:"the quarry caves & Cala Falco", lat:39.464, lon:2.517,
+   face:200, fetch:0.9, ashore:2, tags:["sea caves","beach","family"],
+   why:"Three sandy inlets at the quiet end of the Bay of Palma, and a cave cut into the cliff by the men who quarried the stone for Palma cathedral. You can motor the dinghy into it.",
+   anchor:"Good sand in Cala Portals Vells and Cala Falco, 4 to 6 m. Busy by eleven in August, empty at nine."},
+  {id:"illetes", name:"Illetes & Cala Comtessa", sub:"the town beaches, from the water", lat:39.534, lon:2.594,
+   face:210, fetch:0.75, ashore:1.5, tags:["beach","short hop","family"],
+   why:"The nearest proper swim to Palma: small islets, pale sand, and the whole Bay of Palma laid out behind you. Undemanding, and reachable in any boat that floats.",
+   anchor:"Sand between the islets in 3 to 5 m. Keep clear of the roped swimming areas."},
+  {id:"calapi", name:"Cala Pi & Cap Blanc", sub:"a canyon with a beach at the bottom", lat:39.366, lon:2.845,
+   face:190, fetch:1.1, ashore:2, tags:["dramatic","swim","boat sheds"],
+   why:"A narrow gorge slicing into the cliff, old fishermen's boat sheds cut into the rock, and a wedge of sand at the end. From seaward it is invisible until you are almost inside.",
+   anchor:"Anchor off the entrance in sand and take the dinghy in; the inlet itself is narrow and full of moorings.",
+   care:"Cap Blanc accelerates anything from the west or south-west. It is regularly ten knots windier off the cape than in the bay behind it."},
+  {id:"estrenc", name:"Es Trenc", sub:"three kilometres of white sandbar", lat:39.345, lon:2.988,
+   face:185, fetch:1.15, ashore:2.5, tags:["beach","swim","sand"],
+   why:"The Caribbean impression of Mallorca: shallow turquoise water over white sand with dunes and salt pans behind, and no buildings at all. Best in a boat, because the walk in from the car park is long and hot.",
+   anchor:"Ideal holding, sand from 3 m out. Anchor on the bare patches only, keep well outside the swim buoys, and go ashore by dinghy.",
+   care:"Completely open to the south. Any Migjorn puts swell straight onto the beach and makes the dinghy landing a wet comedy."},
+  {id:"cabrera", name:"Cabrera", sub:"national park, blue cave, permit required", lat:39.152, lon:2.933,
+   face:330, fetch:1.35, ashore:4, permit:true, noNolic:true, offshore:true,
+   tags:["national park","permit","big day","blue cave"],
+   why:"An archipelago left alone since the army had it: a castle over the harbour, a museum, waters thick with fish, and the Cova Blava where the light comes up through the water and turns the whole cave blue. The best day out in Mallorca, and the one that takes the most organising.",
+   anchor:"Mooring buoys in Es Port only, booked in advance through the Balearic government's park office. Numbers are capped and summer weekends go months ahead. Anchoring is prohibited throughout the park.",
+   care:"An open crossing of about nine miles from Colonia de Sant Jordi with no shelter in the middle. Go on a settled morning and be honest about the forecast for the way back."},
+  {id:"moltona", name:"Na Moltona & Es Carbo", sub:"islets off Colonia de Sant Jordi", lat:39.302, lon:3.022,
+   face:195, fetch:1.0, ashore:2, tags:["sandbar","snorkel","family"],
+   why:"Sandbanks and low islets in water so shallow and clear the boat looks like it is hovering. Es Carbo is a long empty beach with no road to it, so the only people there arrived the way you did.",
+   anchor:"Wide sand shelf in 2 to 4 m. Enormous Posidonia meadows either side of it, so pick your patch carefully."},
+  {id:"marmols", name:"Cala Marmols", sub:"beyond the last cape", lat:39.297, lon:3.083,
+   face:135, fetch:1.05, ashore:2, tags:["remote","no road","swim"],
+   why:"A perfect half-moon of sand under low cliffs, an hour's walk from anywhere and reachable in practice only by sea. The reward for rounding Cap de ses Salines.",
+   anchor:"Sand in 4 to 6 m in the middle of the cala, rock on both edges.",
+   care:"Cap de ses Salines has its own wind and a nasty short sea when the breeze opposes the current. Round it early."},
+  {id:"llombards", name:"Cala Llombards & Es Pontas", sub:"the sea arch at Santanyi", lat:39.315, lon:3.130,
+   face:145, fetch:0.95, ashore:2, tags:["sea arch","snorkel","beach"],
+   why:"A limestone arch standing in open water with a sandy cove behind it. You can swim through the arch when it is calm, which is the photograph everyone comes back with.",
+   anchor:"Sand off the beach in 5 to 8 m. Do not park under the arch itself: the ground is rock and the swell reflects off the cliff."},
+  {id:"calomoro", name:"Calo des Moro & Cala s'Almunia", sub:"the postcard, before the queue", lat:39.324, lon:3.139,
+   face:140, fetch:0.95, ashore:1.5, tags:["famous","tiny","early start"],
+   why:"The most photographed cove on the island, thirty metres of sand between two rock walls. From the land it means a queue on a staircase; from a boat at nine in the morning it means nobody.",
+   anchor:"Too small and too deep to anchor comfortably inside. Anchor off in 8 to 10 m of sand and swim or dinghy in.",
+   care:"It fills with day boats after ten. If more than three are already there, carry on to Cala s'Almunia next door."},
+  {id:"mondrago", name:"Cala Mondrago & S'Amarador", sub:"twin beaches in a natural park", lat:39.348, lon:3.187,
+   face:130, fetch:0.9, ashore:2.5, tags:["natural park","beach","family"],
+   why:"Two sandy beaches inside a protected park, joined by a path through the pines, with a beach bar at each end and shallow warm water in between. The easiest family day on the south-east coast.",
+   anchor:"Sand in 4 to 6 m outside the swim zone. Both beaches are inside the park, so no anchoring on weed and no noise."},
+  {id:"figuera", name:"Cala Figuera", sub:"a working fishing inlet", lat:39.336, lon:3.166,
+   face:100, fetch:0.85, ashore:1.5, tags:["village","lunch ashore","no beach"],
+   why:"A narrow fjord of a harbour with boat sheds on stilts and fishing boats still working out of it. Not a swimming stop, a lunch stop, and one of the few places on this coast that has not been rebuilt.",
+   anchor:"No anchoring inside the inlet: it is full of moorings and traffic. Anchor outside in the bay and take the dinghy up, or call ahead for a berth."},
+  {id:"sanau", name:"Cala Sa Nau & Cala Mitjana", sub:"quiet coves near Cala d'Or", lat:39.395, lon:3.244,
+   face:105, fetch:0.9, ashore:2, tags:["beach","snorkel","easy"],
+   why:"Two small sandy inlets a couple of miles from Cala d'Or, with pines to the waterline and rock ledges to snorkel along. Ten minutes' running from the marina and a different world.",
+   anchor:"Sand in 5 to 7 m; the sides of both coves are rock, so stay in the middle."},
+  {id:"varques", name:"Cala Varques & Cova des Coloms", sub:"cove and cave, no road to either", lat:39.470, lon:3.310,
+   face:95, fetch:0.95, ashore:2.5, tags:["sea cave","no road","swim"],
+   why:"The best cove on the east coast has no proper road, an arch you swim through and a cave next door big enough to take the dinghy into. It stays wild because getting there is awkward by land.",
+   anchor:"Sand in 5 to 8 m in the mouth. The cave entrances are rock; leave the boat outside and swim.",
+   care:"Any Llevant sends swell straight in and the cave becomes a bad idea. Go on an east-coast calm."},
+  {id:"magraner", name:"Cala Magraner, Bota & Virgili", sub:"cove-hopping with nobody in them", lat:39.443, lon:3.297,
+   face:100, fetch:0.95, ashore:3, tags:["cove hopping","remote","snorkel"],
+   why:"Four small coves in three miles of undeveloped coast, none of them with a building on it. Anchor, swim, pull the hook, move on to the next one. The classic east-coast pottering day.",
+   anchor:"Each has a sand patch in the middle in 4 to 8 m, with weed on the edges. Short scope, keep an eye on it, they are small."},
+  {id:"portocristocaves", name:"Porto Cristo & the Drach coast", sub:"harbour town and cliff caves", lat:39.532, lon:3.338,
+   face:110, fetch:0.9, ashore:3, tags:["town","caves","lunch ashore"],
+   why:"A proper harbour with a beach at the head of it, the Coves del Drach a short walk up the hill, and cliffs full of sea caves either side of the entrance. A good bad-weather-elsewhere day.",
+   anchor:"Visitors' berths in the marina, or anchor off the beach outside the harbour in settled weather."},
+  {id:"artacoves", name:"Cala Torta, Mitjana & Estreta", sub:"the empty north-east corner", lat:39.751, lon:3.383,
+   face:20, fetch:1.2, ashore:2.5, tags:["remote","dune","surf"],
+   why:"Three undeveloped beaches under the Arta hills with dunes behind and nothing built on them. The most deserted sand on the island in August, because the road stops well short.",
+   anchor:"Sand in 4 to 7 m, straightforward holding.",
+   care:"Wide open to the north. In any Tramuntana there is surf on these beaches and no shelter to duck into for miles."},
+  {id:"agulla", name:"Cala Agulla & Cap de Capdepera", sub:"the corner where the coasts meet", lat:39.720, lon:3.462,
+   face:70, fetch:1.1, ashore:2, tags:["beach","lighthouse","snorkel"],
+   why:"Broad sand backed by pines at the island's north-east tip, with the lighthouse on the cape and, on a clear day, Menorca on the horizon. Ten minutes from Cala Ratjada.",
+   anchor:"Sand in 4 to 6 m off the beach, well outside the buoys.",
+   care:"The cape divides two seas. It is common to find flat water one side and a swell running on the other."},
+  {id:"collbaix", name:"Coll Baix & Cap des Pinar", sub:"pebble beach under the mountain", lat:39.858, lon:3.176,
+   face:45, fetch:1.05, ashore:2, tags:["remote","dramatic","military coast"],
+   why:"A steep white-pebble beach at the foot of a mountain, with a walk-in so awkward it is nearly always empty. The peninsula behind it is old military ground and has stayed undeveloped.",
+   anchor:"Anchor off in 6 to 10 m; the bottom shelves steeply and there is weed, so look for the pale gaps.",
+   care:"Open to the north-east across the whole Bay of Alcudia. Gregal makes it untenable."},
+  {id:"formentorbeach", name:"Platja de Formentor", sub:"pines, sand, and the Tramuntana behind", lat:39.925, lon:3.130,
+   face:200, fetch:0.8, ashore:2.5, tags:["beach","shelter","family","hotel"],
+   why:"Pine trees to the waterline, pale sand, and the mountains standing over the far side of the bay. It faces south-west into the Bay of Pollenca, which makes it the north coast's reliable fallback when the Tramuntana is up.",
+   anchor:"Big sand shelf in 3 to 6 m. Anchor outside the buoyed swimming area and dinghy in."},
+  {id:"formentorcape", name:"Cala Figuera & Cap de Formentor", sub:"the north-facing side of the cape", lat:39.941, lon:3.145,
+   face:15, fetch:1.35, ashore:2, tags:["dramatic","cliffs","big day"],
+   why:"Six hundred metre cliffs, a lighthouse on the end of the world, and a hidden cove of white shingle on the wrong side of the peninsula. When it is calm here it is spectacular; it is not calm here often.",
+   anchor:"Sand and shingle in 6 to 10 m in Cala Figuera. Nothing to hide behind if it changes.",
+   care:"The cape is the windiest place in Mallorca. Tramuntana funnels round it at double the forecast and the sea stands up in the overfalls off the point. Only on a settled day, and preferably in the morning."},
+  {id:"santvicenc", name:"Cala Sant Vicenc", sub:"four coves and the witches' cave", lat:39.921, lon:3.060,
+   face:350, fetch:1.25, ashore:2, tags:["snorkel","sea cave","cliffs"],
+   why:"Clear deep coves under the Cavall Bernat ridge, with the Cova de ses Bruixes cut into the cliff nearby. Some of the clearest snorkelling water on the island, and a proper mountain backdrop.",
+   anchor:"Sand in 6 to 9 m off Cala Barques and Cala Molins.",
+   care:"North-facing, with the whole Gulf of Lion for fetch. Any leftover northerly swell rolls straight in even on a windless morning."},
+  {id:"calacastell", name:"Cala Castell & Torrent de na Mora", sub:"the wildest miles on the north coast", lat:39.897, lon:3.007,
+   face:340, fetch:1.3, ashore:2, tags:["remote","no road","ruins"],
+   why:"A stony cove below the ruined castle of Santueri's northern cousin, with a torrent bed and old boat sheds and nothing else. There is no road and no bar; bring your own everything.",
+   anchor:"Anchor in 8 to 12 m over sand and rock. Do not leave the boat unattended if there is any northerly component.",
+   care:"Exposed north, no shelter for miles either side. Fine-weather only, and go early."},
+  {id:"calobra", name:"Sa Calobra & Torrent de Pareis", sub:"where the gorge meets the sea", lat:39.851, lon:2.801,
+   face:315, fetch:1.3, ashore:3, tags:["gorge","dramatic","hike"],
+   why:"The island's great canyon comes out at a pebble cove between vertical walls. Walk through the tunnels from the landing to the mouth of the Torrent de Pareis and look back up at a thousand feet of limestone.",
+   anchor:"Anchor off the cove in deep water over sand and rock, or use the visitor buoys where laid. It is deep close in and the bottom drops away hard.",
+   care:"North-west facing with big fetch, and swell wraps into it long after the wind has gone. The tourist ferries also use the landing all day; keep clear of their line."},
+  {id:"tuent", name:"Cala Tuent", sub:"Sa Calobra's quiet neighbour", lat:39.845, lon:2.786,
+   face:330, fetch:1.2, ashore:2, tags:["quiet","swim","mountains"],
+   why:"The cove next door to Sa Calobra, under Puig Major, with no ferries and no tunnels and about a tenth of the people. Grey pebble, deep green water, a chapel up the hill.",
+   anchor:"Sand and stone in 6 to 10 m in the middle of the bay."},
+  {id:"foradada", name:"Sa Foradada", sub:"the pierced rock at Son Marroig", lat:39.735, lon:2.622,
+   face:290, fetch:1.15, ashore:3, tags:["landmark","lunch ashore","hike"],
+   why:"A finger of rock with a hole through it reaching out from the Tramuntana cliffs. Anchor in its shadow, land at the little slip and walk up to the restaurant that grills lunch over vine wood.",
+   anchor:"Anchor south of the peninsula in 8 to 15 m over sand, which gives you a lee from anything northerly.",
+   care:"Deep water close in and no room to swing if it fills up. Call the restaurant ahead in season."},
+  {id:"deia", name:"Cala Deia", sub:"pebbles below the village", lat:39.757, lon:2.639,
+   face:320, fetch:1.15, ashore:2.5, tags:["lunch ashore","village","pebble"],
+   why:"A small stony cove at the bottom of a ravine below Deia, with two shacks that have been feeding fishermen and painters for decades. Arrive by sea and you skip the parking problem entirely.",
+   anchor:"Anchor off in 8 to 12 m and dinghy in. The cove is small, rocky-sided and gets busy.",
+   care:"North-west facing. Surge makes the dinghy landing awkward and the restaurants close when it blows."},
+  {id:"valldemossa", name:"Port de Valldemossa", sub:"a jetty at the foot of the cliff", lat:39.716, lon:2.611,
+   face:285, fetch:1.15, ashore:2, tags:["remote","lunch ashore","cliffs"],
+   why:"Six houses, a stone jetty and a restaurant at the bottom of a hairpin road under a thousand feet of mountain. There is no beach to speak of and that is not the point.",
+   anchor:"Anchor off the jetty in 10 to 15 m over sand and weed. Steep-to; give yourself room."},
+  {id:"canonge", name:"Port des Canonge & Banyalbufar", sub:"terraces and boat sheds", lat:39.700, lon:2.545,
+   face:285, fetch:1.15, ashore:2, tags:["quiet","pebble","village"],
+   why:"Stone-walled terraces running down to the sea, a row of green-doored boat sheds and a pebble beach with a bar behind it. The least visited stretch of the west coast.",
+   anchor:"Anchor in 8 to 12 m over sand outside the moorings.",
+   care:"Fully exposed to the west. When the Ponent gets up there is nowhere on this coast to hide."}
+];
+
+/* ============ coastline, roughly ============ */
+const COAST = [
+ [2.354,39.578],[2.368,39.545],[2.389,39.541],[2.400,39.526],[2.427,39.535],[2.447,39.531],
+ [2.478,39.514],[2.489,39.494],[2.526,39.455],[2.518,39.468],[2.535,39.510],[2.594,39.534],
+ [2.632,39.556],[2.680,39.545],[2.723,39.535],[2.752,39.508],[2.762,39.482],[2.790,39.362],
+ [2.845,39.365],[2.920,39.351],[2.958,39.345],[2.995,39.340],[2.993,39.317],[3.055,39.264],
+ [3.085,39.297],[3.128,39.312],[3.140,39.324],[3.146,39.331],[3.166,39.336],[3.187,39.348],
+ [3.207,39.360],[3.235,39.377],[3.248,39.393],[3.271,39.418],[3.298,39.445],[3.312,39.470],
+ [3.335,39.535],[3.371,39.572],[3.400,39.590],[3.386,39.600],[3.393,39.610],[3.417,39.639],
+ [3.462,39.714],[3.484,39.710],[3.437,39.742],[3.383,39.752],[3.318,39.762],[3.269,39.735],
+ [3.156,39.766],[3.132,39.833],[3.155,39.845],[3.176,39.858],[3.195,39.876],[3.114,39.884],
+ [3.088,39.907],[3.131,39.925],[3.212,39.960],[3.145,39.941],[3.060,39.921],[3.007,39.897],
+ [2.960,39.883],[2.930,39.877],[2.880,39.868],[2.801,39.851],[2.786,39.844],[2.740,39.822],
+ [2.692,39.797],[2.639,39.757],[2.622,39.735],[2.611,39.716],[2.545,39.700],[2.513,39.688],
+ [2.478,39.657],[2.430,39.630],[2.375,39.596]
+];
+const DRAGONERA = [[2.313,39.577],[2.322,39.571],[2.341,39.588],[2.345,39.601],[2.336,39.603],[2.316,39.585]];
+const CABRERA   = [[2.925,39.183],[2.955,39.185],[2.975,39.160],[2.960,39.135],[2.930,39.140],[2.912,39.160]];
+
+/* ================= maths ================= */
+const RAD = Math.PI/180;
+const norm = d => ((d%360)+360)%360;
+function nm(a,b){
+  const dLat=(b.lat-a.lat)*60, dLon=(b.lon-a.lon)*60*Math.cos((a.lat+b.lat)/2*RAD);
+  return Math.hypot(dLat,dLon);
+}
+/* distance measured the way a boat has to go: along the coast, round the capes */
+const COAST_PTS = COAST.map(c=>({lon:c[0],lat:c[1]}));
+const SEGLEN = COAST_PTS.map((p,i)=>nm(p,COAST_PTS[(i+1)%COAST_PTS.length]));
+const TOTAL = SEGLEN.reduce((a,b)=>a+b,0);
+const CUM = (()=>{ let s=0; return SEGLEN.map(l=>{const v=s; s+=l; return v;}); })();
+function nearestIdx(p){
+  let best=0,bd=1e9;
+  COAST_PTS.forEach((c,i)=>{ const d=nm(p,c); if(d<bd){bd=d;best=i;} });
+  return {i:best,d:bd};
+}
+function coastDistance(a,b){
+  const A=nearestIdx(a), B=nearestIdx(b);
+  const fwd=Math.abs(CUM[B.i]-CUM[A.i]);
+  const along=Math.min(fwd, TOTAL-fwd);
+  return along + A.d + B.d;
+}
+/* islands off the coast: run along the shore to the best jumping-off point, then strike across */
+function tripDistance(port,trip){
+  if(!trip.offshore) return coastDistance(port,trip);
+  let best=1e9;
+  COAST_PTS.forEach(c=>{
+    const d=coastDistance(port,c)+nm(c,trip);
+    if(d<best) best=d;
+  });
+  return Math.min(best, coastDistance(port,trip));
+}
+/* how much of the wind lands in the mouth of this anchorage: 1 = straight in, 0 = off the land */
+const onshore = (face,wind) => (1+Math.cos((wind-face)*RAD))/2;
+
+function seaState(trip,wind,kts){
+  return kts * (0.18 + 0.82*onshore(trip.face,wind)) * (trip.fetch||1);
+}
+const VERDICTS = [
+  {max:5,  label:"Glassy",   col:"var(--good)", line:"flat water, drop the hook anywhere"},
+  {max:9,  label:"Easy",     col:"var(--ok)",   line:"a ripple, nothing that spoils lunch"},
+  {max:14, label:"Lumpy",    col:"var(--warn)", line:"workable, but the anchorage will roll"},
+  {max:19, label:"Rough",    col:"var(--bad)",  line:"uncomfortable at anchor, wet on passage"},
+  {max:99, label:"Not today",col:"var(--bad)",  line:"the wind is blowing straight into it"}
+];
+const verdictFor = s => VERDICTS.find(v=>s<v.max);
+
+function bestWindsFor(face){
+  const opp = norm(face+180);
+  return WINDS.filter(w=>{
+    let d=Math.abs(norm(w.deg-opp)); if(d>180) d=360-d; return d<=46;
+  }).map(w=>w.name+" ("+w.short+")");
+}
+function windAt(deg){
+  let best=WINDS[0],bd=999;
+  WINDS.forEach(w=>{ let d=Math.abs(norm(w.deg-deg)); if(d>180)d=360-d; if(d<bd){bd=d;best=w;} });
+  return best;
+}
+function beaufort(k){
+  const t=[1,4,7,11,17,22,28,34,41];
+  let f=0; t.forEach((v,i)=>{ if(k>=v) f=i+1; });
+  return f;
+}
+function hm(h){
+  const m=Math.round(h*60);
+  return m<60 ? m+" min" : Math.floor(m/60)+"h"+(m%60?" "+String(m%60).padStart(2,"0"):"");
+}
+
+/* ================= state ================= */
+const store = {
+  get(k,f){ try{ const v=localStorage.getItem("lee."+k); return v===null?f:JSON.parse(v);}catch(e){ return f; } },
+  set(k,v){ try{ localStorage.setItem("lee."+k,JSON.stringify(v)); }catch(e){} }
+};
+const S = {
+  wind: store.get("wind",0),
+  kts:  store.get("kts",12),
+  port: store.get("port","andratx"),
+  boat: store.get("boat","rib"),
+  hours:store.get("hours",6),
+  saved:store.get("saved",[]),
+  open: null
+};
+if(!PORTS.some(p=>p.id===S.port)) S.port="andratx";
+if(!BOATS.some(b=>b.id===S.boat)) S.boat="rib";
+if(HOURS.indexOf(S.hours)<0) S.hours=6;
+
+const $ = s => document.querySelector(s);
+
+/* ================= compass rose ================= */
+(function buildRose(){
+  const ticks=$("#rose-ticks"), labels=$("#rose-labels"), NS="http://www.w3.org/2000/svg";
+  for(let d=0; d<360; d+=15){
+    const major = d%45===0, r1 = major?68:74, r2=80;
+    const a=(d-90)*RAD;
+    const l=document.createElementNS(NS,"line");
+    l.setAttribute("x1",100+Math.cos(a)*r1); l.setAttribute("y1",100+Math.sin(a)*r1);
+    l.setAttribute("x2",100+Math.cos(a)*r2); l.setAttribute("y2",100+Math.sin(a)*r2);
+    l.setAttribute("class","tick"); l.setAttribute("stroke-width",major?1.4:0.6);
+    ticks.appendChild(l);
+  }
+  WINDS.forEach(w=>{
+    const a=(w.deg-90)*RAD, t=document.createElementNS(NS,"text");
+    t.setAttribute("x",100+Math.cos(a)*56); t.setAttribute("y",100+Math.sin(a)*56+3);
+    t.setAttribute("text-anchor","middle"); t.setAttribute("class","card-l");
+    t.textContent=w.short; labels.appendChild(t);
+  });
+})();
+
+function setWind(deg,save){
+  S.wind=norm(Math.round(deg));
+  $("#rose-arrow").setAttribute("transform","rotate("+S.wind+" 100 100)");
+  const w=windAt(S.wind);
+  $("#wind-name").textContent=w.name;
+  $("#wind-deg").innerHTML="from "+String(S.wind).padStart(3,"0")+"° &middot; "+w.short;
+  const rose=$("#rose");
+  rose.setAttribute("aria-valuenow",S.wind); rose.setAttribute("aria-valuetext",w.name+", "+S.wind+" degrees");
+  if(save!==false) store.set("wind",S.wind);
+  render();
+}
+(function roseInput(){
+  const rose=$("#rose");
+  let dragging=false;
+  const angleFrom = e => {
+    const r=rose.getBoundingClientRect();
+    const dx=e.clientX-(r.left+r.width/2), dy=e.clientY-(r.top+r.height/2);
+    return norm(Math.atan2(dx,-dy)/RAD);
+  };
+  rose.addEventListener("pointerdown",e=>{ dragging=true; rose.setPointerCapture(e.pointerId); setWind(angleFrom(e)); e.preventDefault(); });
+  rose.addEventListener("pointermove",e=>{ if(dragging) setWind(angleFrom(e)); });
+  rose.addEventListener("pointerup",()=>{ dragging=false; });
+  rose.addEventListener("pointercancel",()=>{ dragging=false; });
+  rose.addEventListener("keydown",e=>{
+    const step = e.shiftKey?45:5;
+    if(e.key==="ArrowRight"||e.key==="ArrowUp"){ setWind(S.wind+step); e.preventDefault(); }
+    if(e.key==="ArrowLeft"||e.key==="ArrowDown"){ setWind(S.wind-step); e.preventDefault(); }
+  });
+})();
+
+/* ================= controls ================= */
+(function buildControls(){
+  const port=$("#port"), boat=$("#boat"), hours=$("#hours");
+  PORTS.forEach(p=>{ const o=document.createElement("option"); o.value=p.id; o.textContent=p.name; port.appendChild(o); });
+  BOATS.forEach(b=>{ const o=document.createElement("option"); o.value=b.id; o.textContent=b.label; boat.appendChild(o); });
+  port.value=S.port; boat.value=S.boat;
+  port.addEventListener("change",()=>{ S.port=port.value; store.set("port",S.port); render(); });
+  boat.addEventListener("change",()=>{ S.boat=boat.value; store.set("boat",S.boat); render(); });
+  HOURS.forEach(h=>{
+    const b=document.createElement("button"); b.type="button"; b.textContent=h+"h";
+    b.addEventListener("click",()=>{ S.hours=h; store.set("hours",h); render(); });
+    b.dataset.h=h; hours.appendChild(b);
+  });
+  const kts=$("#kts");
+  kts.value=S.kts;
+  kts.addEventListener("input",()=>{ S.kts=+kts.value; store.set("kts",S.kts); render(); });
+})();
+
+function ktsHint(k){
+  if(k<=3) return "Oily calm. Everything on this coast is open to you, including the places that are usually impossible.";
+  if(k<=9) return "Light. In summer this is the morning: the embat, the sea breeze, usually fills in from the south-west after midday and doubles it.";
+  if(k<=15) return "A working breeze. Pick a coast in the lee and the day is perfect; pick the wrong one and you will spend it rolling.";
+  if(k<=21) return "Fresh. The exposed half of the island is out. Rental fleets without licences stay in the harbour at about this point.";
+  if(k<=27) return "Strong. Only deep shelter is worth attempting, and the capes will be far worse than this number suggests.";
+  return "Gale. This is a day for the Coves del Drach, a hire car and a long lunch.";
+}
+
+/* ================= chart ================= */
+const NS="http://www.w3.org/2000/svg";
+const chart=$("#chart");
+const VB={w:420,h:360,pad:18};
+const ALLPTS = COAST.concat(DRAGONERA,CABRERA,TRIPS.map(t=>[t.lon,t.lat]),PORTS.map(p=>[p.lon,p.lat]));
+const B = ALLPTS.reduce((a,p)=>({
+  x0:Math.min(a.x0,p[0]), x1:Math.max(a.x1,p[0]),
+  y0:Math.min(a.y0,p[1]), y1:Math.max(a.y1,p[1])
+}),{x0:9,x1:-9,y0:99,y1:-99});
+const KX = Math.cos(39.6*RAD);
+const SC = Math.min((VB.w-2*VB.pad)/((B.x1-B.x0)*KX), (VB.h-2*VB.pad)/(B.y1-B.y0));
+const OX = (VB.w-(B.x1-B.x0)*KX*SC)/2, OY=(VB.h-(B.y1-B.y0)*SC)/2;
+const px = (lon,lat) => [OX+(lon-B.x0)*KX*SC, OY+(B.y1-lat)*SC];
+const CENTROID = COAST.reduce((a,p)=>[a[0]+p[0]/COAST.length,a[1]+p[1]/COAST.length],[0,0]);
+
+const segFaces = COAST.map((p,i)=>{
+  const q=COAST[(i+1)%COAST.length];
+  const dx=(q[0]-p[0])*KX, dy=q[1]-p[1];
+  let n=[dy,-dx];
+  const mid=[(p[0]+q[0])/2,(p[1]+q[1])/2];
+  const out=[(mid[0]-CENTROID[0])*KX, mid[1]-CENTROID[1]];
+  if(n[0]*out[0]+n[1]*out[1] < 0) n=[-n[0],-n[1]];
+  return norm(Math.atan2(n[0],n[1])/RAD);
+});
+
+(function buildChart(){
+  const path = pts => pts.map((p,i)=>(i?"L":"M")+px(p[0],p[1]).map(v=>v.toFixed(1)).join(" ")).join(" ")+" Z";
+  const bg=document.createElementNS(NS,"rect");
+  bg.setAttribute("x",0); bg.setAttribute("y",0); bg.setAttribute("width",VB.w); bg.setAttribute("height",VB.h);
+  bg.setAttribute("class","sea"); chart.appendChild(bg);
+
+  const grat=document.createElementNS(NS,"g");
+  for(let lat=39.2; lat<=40; lat+=0.2){
+    const l=document.createElementNS(NS,"line");
+    const a=px(B.x0,lat), b=px(B.x1,lat);
+    l.setAttribute("x1",a[0]);l.setAttribute("y1",a[1]);l.setAttribute("x2",b[0]);l.setAttribute("y2",b[1]);
+    l.setAttribute("class","grat"); grat.appendChild(l);
+  }
+  for(let lon=2.4; lon<=3.6; lon+=0.2){
+    const l=document.createElementNS(NS,"line");
+    const a=px(lon,B.y0), b=px(lon,B.y1);
+    l.setAttribute("x1",a[0]);l.setAttribute("y1",a[1]);l.setAttribute("x2",b[0]);l.setAttribute("y2",b[1]);
+    l.setAttribute("class","grat"); grat.appendChild(l);
+  }
+  chart.appendChild(grat);
+
+  [COAST,DRAGONERA,CABRERA].forEach(poly=>{
+    const p=document.createElementNS(NS,"path");
+    p.setAttribute("d",path(poly)); p.setAttribute("class","land"); chart.appendChild(p);
+  });
+  const segs=document.createElementNS(NS,"g"); segs.setAttribute("id","segs"); chart.appendChild(segs);
+  COAST.forEach((p,i)=>{
+    const q=COAST[(i+1)%COAST.length], a=px(p[0],p[1]), b=px(q[0],q[1]);
+    const l=document.createElementNS(NS,"line");
+    l.setAttribute("x1",a[0]);l.setAttribute("y1",a[1]);l.setAttribute("x2",b[0]);l.setAttribute("y2",b[1]);
+    l.setAttribute("class","seg-line"); segs.appendChild(l);
+  });
+  [[DRAGONERA,""],[CABRERA,"Cabrera"]].forEach(([poly,name])=>{
+    const o=document.createElementNS(NS,"path");
+    o.setAttribute("d",path(poly)); o.setAttribute("fill","none");
+    o.setAttribute("stroke","var(--chart)"); o.setAttribute("stroke-width","1.6"); chart.appendChild(o);
+    if(!name) return;
+    const c=poly.reduce((a,p)=>[a[0]+p[0]/poly.length,a[1]+p[1]/poly.length],[0,0]);
+    const xy=px(c[0],c[1]);
+    const t=document.createElementNS(NS,"text");
+    const off = name==="Cabrera" ? {x:0,y:22,a:"middle"} : {x:-16,y:19,a:"start"};
+    t.setAttribute("x",xy[0]+off.x); t.setAttribute("y",xy[1]+off.y);
+    t.setAttribute("text-anchor",off.a); t.setAttribute("class","lbl"); t.textContent=name.toUpperCase();
+    chart.appendChild(t);
+  });
+  const pts=document.createElementNS(NS,"g"); pts.setAttribute("id","pts"); chart.appendChild(pts);
+  const marks=document.createElementNS(NS,"g"); marks.setAttribute("id","marks"); chart.appendChild(marks);
+
+  const w=document.createElementNS(NS,"g"); w.setAttribute("id","chart-wind");
+  w.setAttribute("transform","translate("+(VB.w-40)+" 40)");
+  const ring=document.createElementNS(NS,"circle");
+  ring.setAttribute("r",20); ring.setAttribute("fill","none");
+  ring.setAttribute("stroke","var(--line)"); ring.setAttribute("stroke-dasharray","2 3"); w.appendChild(ring);
+  const rot=document.createElementNS(NS,"g"); rot.setAttribute("id","chart-wind-rot");
+  const ln=document.createElementNS(NS,"line");
+  ln.setAttribute("x1",0);ln.setAttribute("y1",14);ln.setAttribute("x2",0);ln.setAttribute("y2",-14);
+  ln.setAttribute("stroke","var(--accent)"); ln.setAttribute("stroke-width",2); ln.setAttribute("stroke-linecap","round");
+  rot.appendChild(ln);
+  const hd=document.createElementNS(NS,"path");
+  hd.setAttribute("d","M0 14 L-5 3 L5 3 Z"); hd.setAttribute("fill","var(--accent)"); rot.appendChild(hd);
+  w.appendChild(rot);
+  const wl=document.createElementNS(NS,"text");
+  wl.setAttribute("id","chart-wind-label"); wl.setAttribute("y",34);
+  wl.setAttribute("text-anchor","middle"); wl.setAttribute("class","lbl"); w.appendChild(wl);
+  chart.appendChild(w);
+})();
+
+/* ================= scoring & rendering ================= */
+function evaluate(){
+  const port=PORTS.find(p=>p.id===S.port), boat=BOATS.find(b=>b.id===S.boat);
+  return TRIPS.map(t=>{
+    const dist=tripDistance(port,t);
+    const sea=seaState(t,S.wind,S.kts);
+    const v=verdictFor(sea);
+    const passage=2*dist/boat.speed;
+    const total=passage+t.ashore;
+    const blocked=[];
+    if(S.kts>boat.windCap) blocked.push("too much wind for this boat anywhere on the island");
+    if(sea>boat.seaLimit) blocked.push("too much sea for this boat");
+    if(dist>boat.range) blocked.push("beyond this boat's range at "+dist.toFixed(0)+" nm");
+    if(total>S.hours) blocked.push("wants "+hm(total)+", you have "+S.hours+"h");
+    if(boat.id==="nolic" && t.noNolic) blocked.push("not a trip for an unlicensed rental");
+    if(sea>=19) blocked.push("wind blowing straight in");
+    return {t,dist,sea,v,passage,total,blocked,ok:blocked.length===0,rank:VERDICTS.indexOf(v)};
+  }).sort((a,b)=> a.rank-b.rank || a.dist-b.dist);
+}
+
+function card(r){
+  const t=r.t, saved=S.saved.indexOf(t.id)>=0;
+  const el=document.createElement("article");
+  el.className="card"+(r.ok?"":" dim")+(S.open===t.id?" open":"");
+  el.style.setProperty("--v-col", r.ok?r.v.col:"var(--ink-faint)");
+  el.dataset.id=t.id;
+  const tags=(t.tags||[]).map(x=>'<span class="tag">'+x+'</span>').join("")+
+    (t.permit?'<span class="tag pos">permit required</span>':"");
+  const reason = r.ok ? "" : '<div class="meta" style="color:var(--ink-faint)">'+r.blocked[0]+'</div>';
+  el.innerHTML =
+   '<div class="stripe"></div><div class="card-in">'+
+     '<div class="card-top">'+
+       '<h3>'+t.name+'<span class="sub">'+t.sub+'</span></h3>'+
+       '<div class="verdict">'+
+         '<span class="chip'+(r.ok&&r.sea<9?" fill":"")+'">'+(r.ok?r.v.label:"Not today")+'</span>'+
+         '<span class="mono" style="font-size:11px;color:var(--ink-faint)">'+r.sea.toFixed(0)+' kn in the mouth</span>'+
+       '</div>'+
+     '</div>'+
+     '<div class="meta tnum">'+
+       '<span><b>'+r.dist.toFixed(1)+'</b> nm out</span>'+
+       '<span><b>'+hm(r.passage)+'</b> afloat</span>'+
+       '<span><b>'+hm(r.t.ashore)+'</b> there</span>'+
+       '<span>opens <b>'+windAt(t.face).short+'</b> '+String(t.face).padStart(3,"0")+'&deg;</span>'+
+     '</div>'+
+     reason+
+     '<p class="blurb">'+t.why+'</p>'+
+     '<div class="tags">'+tags+'</div>'+
+     '<div class="card-actions">'+
+       '<button class="link-btn" type="button" data-act="open">'+(S.open===t.id?"Less":"Anchoring &amp; detail")+'</button>'+
+       '<button class="star" type="button" data-act="save" aria-pressed="'+saved+'">'+(saved?"★ saved":"☆ save")+'</button>'+
+     '</div>'+
+     '<div class="detail"><dl class="dl">'+
+       '<dt>Today</dt><dd>'+r.v.line+'</dd>'+
+       '<dt>Anchoring</dt><dd class="grass">'+t.anchor+'</dd>'+
+       (t.care?'<dt>Watch out</dt><dd class="care">'+t.care+'</dd>':"")+
+       '<dt>Best winds</dt><dd>'+bestWindsFor(t.face).join(", ")+'</dd>'+
+     '</dl></div>'+
+   '</div>';
+  el.addEventListener("click",e=>{
+    const b=e.target.closest("button"); if(!b) return;
+    if(b.dataset.act==="open"){ S.open = S.open===t.id?null:t.id; render(); }
+    if(b.dataset.act==="save"){
+      const i=S.saved.indexOf(t.id);
+      if(i<0) S.saved.push(t.id); else S.saved.splice(i,1);
+      store.set("saved",S.saved); render();
+    }
+  });
+  return el;
+}
+
+function render(){
+  const boat=BOATS.find(b=>b.id===S.boat), port=PORTS.find(p=>p.id===S.port);
+  $("#kts-read").textContent=S.kts+" kn";
+  $("#beaufort").textContent="Force "+beaufort(S.kts);
+  $("#kts-hint").textContent=ktsHint(S.kts);
+  $("#boat-hint").textContent=boat.note;
+  Array.from($("#hours").children).forEach(b=>b.setAttribute("aria-pressed", String(+b.dataset.h===S.hours)));
+
+  const res=evaluate(), good=res.filter(r=>r.ok), bad=res.filter(r=>!r.ok);
+  const list=$("#list"), out=$("#list-out");
+  list.innerHTML=""; out.innerHTML="";
+  if(good.length){
+    good.forEach(r=>list.appendChild(card(r)));
+  } else {
+    list.innerHTML='<div class="empty">'+(S.kts>boat.windCap
+      ? windAt(S.wind).name+' at '+S.kts+' knots is too much for this boat anywhere on the island. Nothing here is worth the ride home.'
+      : 'Nothing within reach of '+port.name+' in '+S.hours+' hours with '+windAt(S.wind).name+
+        ' at '+S.kts+' knots. Try a longer day, a different harbour, or wait for the wind to back.')+'</div>';
+  }
+  bad.forEach(r=>out.appendChild(card(r)));
+  $("#count").textContent = good.length+" of "+res.length+" worth doing from "+port.name;
+  $("#more-label").textContent = bad.length+" ruled out today";
+  $("#more").style.display = bad.length? "block":"none";
+  $("#results-title").textContent = good.length? "Best runs today" : "Nothing in the lee";
+
+  /* chart: shade the coast, plot the trips */
+  const segs=$("#segs").children;
+  for(let i=0;i<segs.length;i++){
+    const o=onshore(segFaces[i],S.wind);
+    const col = o<0.25?"var(--good)": o<0.5?"var(--ok)": o<0.75?"var(--warn)":"var(--bad)";
+    segs[i].setAttribute("stroke",col);
+    segs[i].setAttribute("opacity", (0.35+0.65*Math.min(1,S.kts/22)).toFixed(2));
+  }
+  const pts=$("#pts"); pts.innerHTML="";
+  res.forEach(r=>{
+    const xy=px(r.t.lon,r.t.lat);
+    const g=document.createElementNS(NS,"g");
+    g.setAttribute("class","pt"+(S.open===r.t.id?" sel":""));
+    const c=document.createElementNS(NS,"circle");
+    c.setAttribute("cx",xy[0]); c.setAttribute("cy",xy[1]);
+    c.setAttribute("r",S.open===r.t.id?6:4.2);
+    c.setAttribute("fill", r.ok?r.v.col:"var(--ink-faint)");
+    c.setAttribute("opacity", r.ok?1:0.4);
+    g.appendChild(c);
+    const title=document.createElementNS(NS,"title");
+    title.textContent=r.t.name+" — "+(r.ok?r.v.label:"ruled out")+", "+r.dist.toFixed(1)+" nm";
+    g.appendChild(title);
+    g.addEventListener("click",()=>{
+      S.open = S.open===r.t.id?null:r.t.id; render();
+      const el=document.querySelector('.card[data-id="'+r.t.id+'"]');
+      if(el) el.scrollIntoView({behavior:"smooth",block:"center"});
+    });
+    pts.appendChild(g);
+    if(S.open===r.t.id){
+      const t=document.createElementNS(NS,"text");
+      t.setAttribute("x",xy[0]); t.setAttribute("y",xy[1]-9);
+      t.setAttribute("text-anchor","middle"); t.setAttribute("class","lbl");
+      t.setAttribute("fill","var(--ink)");
+      t.textContent=r.t.name.split(" & ")[0].split(",")[0].toUpperCase();
+      pts.appendChild(t);
+    }
+  });
+  document.getElementById("chart-wind-rot").setAttribute("transform","rotate("+S.wind+")");
+  document.getElementById("chart-wind-label").textContent=windAt(S.wind).short+" "+S.kts+"KN";
+
+  const marks=$("#marks"); marks.innerHTML="";
+  const pxy=px(port.lon,port.lat);
+  const sq=document.createElementNS(NS,"rect");
+  sq.setAttribute("x",pxy[0]-5); sq.setAttribute("y",pxy[1]-5);
+  sq.setAttribute("width",10); sq.setAttribute("height",10);
+  sq.setAttribute("transform","rotate(45 "+pxy[0]+" "+pxy[1]+")");
+  sq.setAttribute("class","port"); marks.appendChild(sq);
+  const pl=document.createElementNS(NS,"text");
+  pl.setAttribute("x",pxy[0]); pl.setAttribute("y",pxy[1]+18);
+  pl.setAttribute("text-anchor","middle"); pl.setAttribute("class","lbl");
+  pl.setAttribute("fill","var(--ink)"); pl.textContent=port.name.toUpperCase();
+  marks.appendChild(pl);
+}
+
+/* ================= theme ================= */
+(function theme(){
+  const btn=$("#theme-btn");
+  const saved=store.get("theme",null);
+  if(saved) document.documentElement.setAttribute("data-theme",saved);
+  const label=()=>{
+    const dark = document.documentElement.getAttribute("data-theme")==="dark" ||
+      (!document.documentElement.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+    btn.textContent = dark? "Light":"Dark";
+  };
+  label();
+  btn.addEventListener("click",()=>{
+    const dark = document.documentElement.getAttribute("data-theme")==="dark" ||
+      (!document.documentElement.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+    const next = dark? "light":"dark";
+    document.documentElement.setAttribute("data-theme",next);
+    store.set("theme",next); label();
+  });
+})();
+
+setWind(S.wind,false);
+})();
+</script>
