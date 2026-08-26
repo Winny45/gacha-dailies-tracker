@@ -1,119 +1,6 @@
 {
- "generated_at": "2026-08-25T06:56:28.002439+00:00",
+ "generated_at": "2026-08-26T06:57:14.829499+00:00",
  "verdicts": {
-  "brown_dust_2:helena sunny inn hand": {
-   "label": "Strong Pull",
-   "score": 4.666666666666667,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "Recommended",
-     "analysis": "Augmentation + reduce cooldown of all costumes for the next ally in the list.  Buff can be kept up full time at +3.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "Pocket Gamer",
-     "url": "https://www.pocketgamer.com/brown-dust-2/tier-list/",
-     "verdict": "S Tier",
-     "analysis": "Single-target support that grants massive damage augmentation (+150%) and a 2-turn costume cooldown reduction to the next-attacking ally, alongside Energy Guard scaling off her Magic ATK. Ideal for enabling high-damage nukers in Last Night and Tower of Pride.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "Yes ( Must )",
-     "analysis": "This costume provides a big amount of Augmentation to one ally, as well as a small CD reduction. Considering Helena is already a core magic buffer, her value increases even more. Additionally, this costume fulfils her rotation, making it complete.\n\nBy mode -- GR: Meta, FH: Meta, TOS: Niche, GC: Niche, GEN: Niche",
-     "pros": [
-      "Buffer Costume",
-      "Filling Helena rotation",
-      "Good buff value"
-     ],
-     "cons": []
-    }
-   ]
-  },
-  "brown_dust_2:yuri comeback idol": {
-   "label": "Situational",
-   "score": 2.5,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "FH/GR Regular",
-     "analysis": "Stacking Crit DMG buff + very strong single hit attack, 5 tiles horizontal.  Complements Sacred Justia for general content, clearing out leftovers.  Needs Whitebolt to reach her full potential in FH.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "Situational",
-     "analysis": "Yuri is good DPS that often fights with other Light DPS for a spot in team lineups. This costume has higher damage than Whitebolt, although, both are necessary for self-buffs and her rotation. I would consider her only if you lack Light DPS and have Whitebold at at least +1.\n\nBy mode -- GR: Good, FH: Good, LN: Niche, TOS: Niche, MW: Niche, GC: Niche, GEN: Niche",
-     "pros": [
-      "Decent Light DPS"
-     ],
-     "cons": [
-      "Mid AoE"
-     ]
-    }
-   ]
-  },
-  "brown_dust_2:sylvia the sword queen": {
-   "label": "Good Pull",
-   "score": 4.0,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "FH/GR Regular",
-     "analysis": "Self buff costume, duration increases at +2 and +5.  Virtually useless at anything lower than +2, and +5 is ideal.  Only useful if you have the Admiral or Bikini Agent costumes.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "Yes ( Recommended )",
-     "analysis": "If you ever plan to build a Sylvia, this is costume that you must have. This Costume offers a big ATK buff to herself which is furthermore exploited by Bikini Agent Sylvia.\n\nBy mode -- GR: Good, FH: Good, LN: Bad, TOS: Niche, MW: Bad, GC: Niche, GEN: Bad",
-     "pros": [
-      "The mandatory Costume for Sylvia"
-     ],
-     "cons": [
-      "Expensive Character to build overall",
-      "Bad AoE"
-     ]
-    }
-   ]
-  },
-  "brown_dust_2:alec the destruction": {
-   "label": "Low Priority / Skip",
-   "score": 1.0,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "Skip",
-     "analysis": "Deals fixed damage, only useful in PvP.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "No (Skip)",
-     "analysis": "Even despite being a PvP costume, his usage is incredibly low even there.\n\nBy mode -- GR: Bad, FH: Bad, LN: Bad, TOS: Bad, MW: Niche, GC: Niche, GEN: Bad",
-     "pros": [],
-     "cons": [
-      "Barely usable",
-      "PvP Costume",
-      "Bad AoE"
-     ]
-    }
-   ]
-  },
   "brown_dust_2:dalvi bright moon": {
    "label": "Situational",
    "score": 2.5,
@@ -140,23 +27,9 @@
     }
    ]
   },
-  "brown_dust_2:aquila savage warrior": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "New Character",
-     "analysis": "\u00e2\u0080\u009cempowers herself based on the number of times she is attacked after dealing damage to enemies\u00e2\u0080\u009d",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
   "brown_dust_2:blade young lady": {
    "label": "Strong Pull",
-   "score": 4.5,
+   "score": 4.333333333333333,
    "sources": [
     {
      "name": "gamependium.com",
@@ -173,6 +46,48 @@
      "analysis": "Young Lady Blade is a Dark Physical DPS character strong in PvE due to her high AoE damage (300% ATK) and amplification (+150%). She's essential for maximising Blade's potential, particularly with Apostle. However, her low durability makes her less effective in PvP. She's a good choice for PvE and those who enjoy glass cannon playstyles.",
      "pros": [],
      "cons": []
+    },
+    {
+     "name": "BD2 Banner Recommendation",
+     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
+     "verdict": "Yes ( Recommended )",
+     "analysis": "Great costume for general content, thanks to the 3x3 skill range and good skill damage. Otherwise, this is mostly used as rotational costume, and in extremely rare occasions as amplifier / low-chainer for 1 tile.\n\nBy mode -- GR: Niche, FH: Good, LN: Niche, TOS: Meta, MW: Niche, GC: Good, GEN: Meta",
+     "pros": [
+      "Very good AoE",
+      "Decent Damage",
+      "Amplifier"
+     ],
+     "cons": [
+      "Not the main source for her damage"
+     ]
+    }
+   ]
+  },
+  "brown_dust_2:aquila savage warrior": {
+   "label": "Situational",
+   "score": 2.5,
+   "sources": [
+    {
+     "name": "gamependium.com",
+     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
+     "verdict": "FH/GR Regular",
+     "analysis": "Stacking ATK buff when struck + 3-hit attack.  CD decreases by 2 with every hit she takes for 2 turns.  Buff improves at +3 and +5.  Needs to be hit 4 times to use every turn.  The range is too weird be useful for anything other than FH/GR. Random",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "BD2 Banner Recommendation",
+     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
+     "verdict": "Situational",
+     "analysis": "At the moment the only way to have her be active each turn is via at least 4-Hit attacks from the enemy, which does not happen every time. Since she will be a new DPS, it is quite hard to predict how good a character overall will be. Pull +5 if you are planning to build Aquila, otherwise stop at lower breakpoints.<br><br><i>Make sure to recruit her from <b>pub</b> (any Chapter) for free 10 Draw Tickets.</i>\n\nBy mode -- GR: Good, FH: Good, LN: Niche, TOS: Niche, MW: Bad, GC: Niche, GEN: Niche",
+     "pros": [
+      "Self-Buffer",
+      "Decent Damage"
+     ],
+     "cons": [
+      "Questionable AoE",
+      "Depentend on enemy multi-attacks"
+     ]
     }
    ]
   },

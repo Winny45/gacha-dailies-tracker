@@ -1,48 +1,8 @@
 {
- "generated_at": "2026-08-25T06:56:28.001854+00:00",
+ "generated_at": "2026-08-26T06:57:14.829035+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
-    {
-     "title": "Helena -- Sunny Inn Hand",
-     "category": "banner",
-     "start": "2026-08-13T00:00:00",
-     "end": "2026-08-26T00:00:00",
-     "when": "2026-08-13 - 2026-08-26 (14 days)",
-     "image": "images/5e9c4dbfedd586791b9df10dab49dbb0200e4d6f.jpg",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    },
-    {
-     "title": "Yuri -- Comeback Idol",
-     "category": "banner",
-     "start": "2026-07-30T00:00:00",
-     "end": "2026-08-26T00:00:00",
-     "when": "2026-07-30 - 2026-08-26 (28 days)",
-     "image": "images/fbbd4e7d9ac48194e75907613d3dfcc8e711603c.jpg",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    },
-    {
-     "title": "Sylvia -- The Sword Queen",
-     "category": "banner",
-     "start": "2026-07-30T00:00:00",
-     "end": "2026-08-26T00:00:00",
-     "when": "2026-07-30 - 2026-08-26 (28 days)",
-     "image": "images/04e8e1cdb1ef94eee6babec40bbcd891c0c10c78.jpg",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    },
-    {
-     "title": "Alec -- The Destruction",
-     "category": "banner",
-     "start": "2026-08-20T00:00:00",
-     "end": "2026-08-26T00:00:00",
-     "when": "2026-08-20 - 2026-08-26 (7 days)",
-     "image": "images/74edd0701f66e5e09197308e1996cf28c0a9cb59.jpg",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    },
     {
      "title": "Dalvi -- Bright Moon",
      "category": "banner",
@@ -56,22 +16,22 @@
    ],
    "upcoming": [
     {
-     "title": "Aquila -- Savage Warrior",
-     "category": "banner",
-     "start": "2026-08-27T00:00:00",
-     "end": "2026-09-09T00:00:00",
-     "when": "2026-08-27 - 2026-09-09 (14 days)",
-     "image": "",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    },
-    {
      "title": "Blade -- Young Lady",
      "category": "banner",
      "start": "2026-08-27T00:00:00",
      "end": "2026-09-23T00:00:00",
      "when": "2026-08-27 - 2026-09-23 (28 days)",
      "image": "images/1ca6d7701727c0d7fffb73b34f16ff695a77be5e.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    },
+    {
+     "title": "Aquila -- Savage Warrior",
+     "category": "banner",
+     "start": "2026-08-27T00:00:00",
+     "end": "2026-09-09T00:00:00",
+     "when": "2026-08-27 - 2026-09-09 (14 days)",
+     "image": "images/b94e17f535a338bd9b8c44e182912960d53d00c4.jpg",
      "source_name": "gamependium.com",
      "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
     }
@@ -104,36 +64,6 @@
   },
   "blue_archive": {
    "current": [
-    {
-     "title": "Pandemic Hazard \uff5e Miracle Pancake \uff5e",
-     "category": "event",
-     "start": "2026-08-12T00:00:00",
-     "end": "2026-08-26T00:00:00",
-     "when": "2026-08-12 - 2026-08-26",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
-    {
-     "title": "TripleCommissionsrewards",
-     "category": "event",
-     "start": "2026-08-19T04:00:00",
-     "end": "2026-08-26T03:59:00",
-     "when": "08/19/2026 04:00 - 08/26/2026 03:59",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
-    {
-     "title": "Triple HardMissionsrewards",
-     "category": "event",
-     "start": "2026-08-23T04:00:00",
-     "end": "2026-08-26T03:59:00",
-     "when": "08/23/2026 04:00 - 08/26/2026 03:59",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
     {
      "title": "5.5 Anniversary Login Bonus",
      "category": "event",
