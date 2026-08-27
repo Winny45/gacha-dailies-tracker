@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-26T06:57:14.829035+00:00",
+ "generated_at": "2026-08-27T17:30:29.055760+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -12,18 +12,6 @@
      "image": "images/641d2210ae1de0afecf1a936198fcfc48c951bb4.jpg",
      "source_name": "gamependium.com",
      "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    }
-   ],
-   "upcoming": [
-    {
-     "title": "Blade -- Young Lady",
-     "category": "banner",
-     "start": "2026-08-27T00:00:00",
-     "end": "2026-09-23T00:00:00",
-     "when": "2026-08-27 - 2026-09-23 (28 days)",
-     "image": "images/1ca6d7701727c0d7fffb73b34f16ff695a77be5e.jpg",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
     },
     {
      "title": "Aquila -- Savage Warrior",
@@ -34,8 +22,19 @@
      "image": "images/b94e17f535a338bd9b8c44e182912960d53d00c4.jpg",
      "source_name": "gamependium.com",
      "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
+    },
+    {
+     "title": "Blade -- Young Lady",
+     "category": "banner",
+     "start": "2026-08-27T00:00:00",
+     "end": "2026-09-23T00:00:00",
+     "when": "2026-08-27 - 2026-09-23 (28 days)",
+     "image": "images/1ca6d7701727c0d7fffb73b34f16ff695a77be5e.jpg",
+     "source_name": "gamependium.com",
+     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
     }
-   ]
+   ],
+   "upcoming": []
   },
   "nikke": {
    "current": [
@@ -64,16 +63,6 @@
   },
   "blue_archive": {
    "current": [
-    {
-     "title": "5.5 Anniversary Login Bonus",
-     "category": "event",
-     "start": "2026-07-29T11:00:00",
-     "end": "2026-08-26T10:59:00",
-     "when": "07/29/2026 11:00 - 08/26/2026 10:59",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
     {
      "title": "Special Mission: Lore Pursuit",
      "category": "event",
@@ -105,6 +94,36 @@
      "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
     },
     {
+     "title": "DoubleSchedulerewards",
+     "category": "event",
+     "start": "2026-08-26T04:00:00",
+     "end": "2026-09-02T03:59:00",
+     "when": "08/26/2026 04:00 - 09/02/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "DoubleScrimmagerewards",
+     "category": "event",
+     "start": "2026-08-26T04:00:00",
+     "end": "2026-09-02T03:59:00",
+     "when": "08/26/2026 04:00 - 09/02/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Dive into OCEAN!",
+     "category": "event",
+     "start": "2026-08-26T00:00:00",
+     "end": "2026-09-09T00:00:00",
+     "when": "2026-08-26 - 2026-09-09",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
      "title": "Night shift guide mission!",
      "category": "event",
      "start": "2024-01-25T11:00:00",
@@ -126,6 +145,16 @@
     }
    ],
    "upcoming": [
+    {
+     "title": "Double level EXP",
+     "category": "event",
+     "start": "2026-08-29T04:00:00",
+     "end": "2026-08-31T03:59:00",
+     "when": "08/29/2026 04:00 - 08/31/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
     {
      "title": "Pray-Ball! Swing for the Grand Slam!",
      "category": "event",
@@ -197,11 +226,71 @@
      "source_url": "https://bluearchive.wiki/wiki/Events"
     },
     {
+     "title": "Double NormalMissionsrewards",
+     "category": "event",
+     "start": "2026-09-02T04:00:00",
+     "end": "2026-09-06T03:59:00",
+     "when": "09/02/2026 04:00 - 09/06/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Double level EXP",
+     "category": "event",
+     "start": "2026-09-05T04:00:00",
+     "end": "2026-09-07T03:59:00",
+     "when": "09/05/2026 04:00 - 09/07/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Double HardMissionsrewards",
+     "category": "event",
+     "start": "2026-09-06T04:00:00",
+     "end": "2026-09-09T03:59:00",
+     "when": "09/06/2026 04:00 - 09/09/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Summer Sky's Promise",
+     "category": "event",
+     "start": "2026-09-09T00:00:00",
+     "end": "2026-09-23T00:00:00",
+     "when": "2026-09-09 - 2026-09-23",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "DoubleBounty Huntsrewards",
+     "category": "event",
+     "start": "2026-09-09T04:00:00",
+     "end": "2026-09-16T03:59:00",
+     "when": "09/09/2026 04:00 - 09/16/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
      "title": "Shooting Exercise",
      "category": "event",
      "start": "2026-09-09T11:00:00",
      "end": "2026-09-16T03:59:00",
      "when": "09/09/2026 11:00 - 09/16/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "DoubleCommissionsrewards",
+     "category": "event",
+     "start": "2026-09-16T04:00:00",
+     "end": "2026-09-23T03:59:00",
+     "when": "09/16/2026 04:00 - 09/23/2026 03:59",
      "image": "",
      "source_name": "bluearchive.wiki",
      "source_url": "https://bluearchive.wiki/wiki/Events"

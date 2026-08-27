@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-26T06:57:14.829499+00:00",
+ "generated_at": "2026-08-27T17:30:29.056345+00:00",
  "verdicts": {
   "brown_dust_2:dalvi bright moon": {
    "label": "Situational",
@@ -23,6 +23,34 @@
      ],
      "cons": [
       "Mediocre Aoe"
+     ]
+    }
+   ]
+  },
+  "brown_dust_2:aquila savage warrior": {
+   "label": "Situational",
+   "score": 2.5,
+   "sources": [
+    {
+     "name": "gamependium.com",
+     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
+     "verdict": "FH/GR Regular",
+     "analysis": "Stacking ATK buff when struck + 3-hit attack.  CD decreases by 2 with every hit she takes for 2 turns.  Buff improves at +3 and +5.  Needs to be hit 4 times to use every turn.  The range is too weird be useful for anything other than FH/GR, potentially very strong depending on future costumes. Random",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "BD2 Banner Recommendation",
+     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
+     "verdict": "Situational",
+     "analysis": "At the moment the only way to have her be active each turn is via at least 4-Hit attacks from the enemy, which does not happen every time. Since she will be a new DPS, it is quite hard to predict how good a character overall will be. Pull +5 if you are planning to build Aquila, otherwise stop at lower breakpoints.<br><br><i>Make sure to recruit her from <b>pub</b> (any Chapter) for free 10 Draw Tickets.</i>\n\nBy mode -- GR: Good, FH: Good, LN: Niche, TOS: Niche, MW: Bad, GC: Niche, GEN: Niche",
+     "pros": [
+      "Self-Buffer",
+      "Decent Damage"
+     ],
+     "cons": [
+      "Questionable AoE",
+      "Depentend on enemy multi-attacks"
      ]
     }
    ]
@@ -59,34 +87,6 @@
      ],
      "cons": [
       "Not the main source for her damage"
-     ]
-    }
-   ]
-  },
-  "brown_dust_2:aquila savage warrior": {
-   "label": "Situational",
-   "score": 2.5,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "FH/GR Regular",
-     "analysis": "Stacking ATK buff when struck + 3-hit attack.  CD decreases by 2 with every hit she takes for 2 turns.  Buff improves at +3 and +5.  Needs to be hit 4 times to use every turn.  The range is too weird be useful for anything other than FH/GR. Random",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "Situational",
-     "analysis": "At the moment the only way to have her be active each turn is via at least 4-Hit attacks from the enemy, which does not happen every time. Since she will be a new DPS, it is quite hard to predict how good a character overall will be. Pull +5 if you are planning to build Aquila, otherwise stop at lower breakpoints.<br><br><i>Make sure to recruit her from <b>pub</b> (any Chapter) for free 10 Draw Tickets.</i>\n\nBy mode -- GR: Good, FH: Good, LN: Niche, TOS: Niche, MW: Bad, GC: Niche, GEN: Niche",
-     "pros": [
-      "Self-Buffer",
-      "Decent Damage"
-     ],
-     "cons": [
-      "Questionable AoE",
-      "Depentend on enemy multi-attacks"
      ]
     }
    ]
@@ -273,12 +273,12 @@
   },
   "limbus:cinq assoc east section 3 hong lu": {
    "label": "Good Pull",
-   "score": 3.5,
+   "score": 4.0,
    "sources": [
     {
      "name": "Prydwen",
      "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "7/10",
+     "verdict": "8/10",
      "analysis": "",
      "pros": [],
      "cons": []
