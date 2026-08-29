@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-28T18:26:00.243258+00:00",
+ "generated_at": "2026-08-29T12:32:39.164991+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -63,6 +63,16 @@
   },
   "blue_archive": {
    "current": [
+    {
+     "title": "Double level EXP",
+     "category": "event",
+     "start": "2026-08-29T04:00:00",
+     "end": "2026-08-31T03:59:00",
+     "when": "08/29/2026 04:00 - 08/31/2026 03:59",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
     {
      "title": "Special Mission: Lore Pursuit",
      "category": "event",
@@ -145,16 +155,6 @@
     }
    ],
    "upcoming": [
-    {
-     "title": "Double level EXP",
-     "category": "event",
-     "start": "2026-08-29T04:00:00",
-     "end": "2026-08-31T03:59:00",
-     "when": "08/29/2026 04:00 - 08/31/2026 03:59",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
     {
      "title": "Pray-Ball! Swing for the Grand Slam!",
      "category": "event",
