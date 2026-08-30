@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-29T12:32:39.164991+00:00",
+ "generated_at": "2026-08-30T11:38:22.844033+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -299,16 +299,6 @@
   },
   "limbus": {
    "current": [
-    {
-     "title": "New Manager Attendance Check Event",
-     "category": "event",
-     "start": null,
-     "end": "2026-08-30T00:00:00",
-     "when": "Initial Account Creation - 30 Days after Account Creation",
-     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
-    },
     {
      "title": "Cinq Assoc. East Section 3 Hong Lu",
      "category": "banner",
