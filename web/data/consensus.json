@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-30T11:38:22.844573+00:00",
+ "generated_at": "2026-08-31T13:14:15.596515+00:00",
  "verdicts": {
   "brown_dust_2:dalvi bright moon": {
    "label": "Situational",
@@ -92,14 +92,22 @@
    ]
   },
   "nikke:persona collab queen makoto nijima": {
-   "label": "No consensus data",
-   "score": null,
+   "label": "Situational",
+   "score": 3.0,
    "sources": [
     {
      "name": "hostedgg.com",
      "url": "https://hostedgg.com/wiki/nikke/banners",
      "verdict": "",
      "analysis": "A Fire Code Attacker on a shotgun, and a collab limited unit. Collab Nikkes typically never rerun, so pull now if you want her at all rather than banking on a second chance.",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "Pocket Tactics",
+     "url": "https://www.pockettactics.com/nikke/tier-list",
+     "verdict": "B",
+     "analysis": "",
      "pros": [],
      "cons": []
     }
