@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31T13:14:15.596081+00:00",
+ "generated_at": "2026-09-01T11:25:31.662520+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -64,36 +64,6 @@
   "blue_archive": {
    "current": [
     {
-     "title": "Special Mission: Lore Pursuit",
-     "category": "event",
-     "start": "2026-08-18T00:00:00",
-     "end": "2026-09-01T00:00:00",
-     "when": "2026-08-18 - 2026-09-01",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
-    {
-     "title": "Niko",
-     "category": "banner",
-     "start": "2026-08-18T11:00:00",
-     "end": "2026-09-01T10:59:00",
-     "when": "2026/08/18 11:00 \u2014 2026/09/01 10:59",
-     "image": "images/1911b28e8b39d21e7348d86ff5e6e30d36d1bd38.png",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
-    },
-    {
-     "title": "Kurumi",
-     "category": "banner",
-     "start": "2026-08-18T11:00:00",
-     "end": "2026-09-01T10:59:00",
-     "when": "2026/08/18 11:00 \u2014 2026/09/01 10:59",
-     "image": "images/f4c2ea9edfdce473b4a2febf241f70c52df746b4.png",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
-    },
-    {
      "title": "DoubleSchedulerewards",
      "category": "event",
      "start": "2026-08-26T04:00:00",
@@ -114,43 +84,11 @@
      "source_url": "https://bluearchive.wiki/wiki/Events"
     },
     {
-     "title": "Dive into OCEAN!",
+     "title": "Defense Exercise",
      "category": "event",
-     "start": "2026-08-26T00:00:00",
-     "end": "2026-09-09T00:00:00",
-     "when": "2026-08-26 - 2026-09-09",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
-    {
-     "title": "Night shift guide mission!",
-     "category": "event",
-     "start": "2024-01-25T11:00:00",
-     "end": "2125-12-31T00:00:00",
-     "when": "01/25/2024 11:00 - 12/31/2125 00:00",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
-    {
-     "title": "Hospitality Tea Time",
-     "category": "event",
-     "start": "2025-07-22T11:00:00",
-     "end": "2125-12-31T00:00:00",
-     "when": "07/22/2025 11:00 - 12/31/2125 00:00",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    }
-   ],
-   "upcoming": [
-    {
-     "title": "Pray-Ball! Swing for the Grand Slam!",
-     "category": "event",
-     "start": "2026-09-01T00:00:00",
-     "end": "2026-09-15T00:00:00",
-     "when": "2026-09-01 - 2026-09-15",
+     "start": "2026-09-01T11:00:00",
+     "end": "2026-09-08T03:59:00",
+     "when": "09/01/2026 11:00 - 09/08/2026 03:59",
      "image": "",
      "source_name": "bluearchive.wiki",
      "source_url": "https://bluearchive.wiki/wiki/Events"
@@ -206,15 +144,47 @@
      "source_url": "https://bluearchive.wiki/wiki/Banner_List_(Global)"
     },
     {
-     "title": "Defense Exercise",
+     "title": "Dive into OCEAN!",
      "category": "event",
-     "start": "2026-09-01T11:00:00",
-     "end": "2026-09-08T03:59:00",
-     "when": "09/01/2026 11:00 - 09/08/2026 03:59",
+     "start": "2026-08-26T00:00:00",
+     "end": "2026-09-09T00:00:00",
+     "when": "2026-08-26 - 2026-09-09",
      "image": "",
      "source_name": "bluearchive.wiki",
      "source_url": "https://bluearchive.wiki/wiki/Events"
     },
+    {
+     "title": "Pray-Ball! Swing for the Grand Slam!",
+     "category": "event",
+     "start": "2026-09-01T00:00:00",
+     "end": "2026-09-15T00:00:00",
+     "when": "2026-09-01 - 2026-09-15",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Night shift guide mission!",
+     "category": "event",
+     "start": "2024-01-25T11:00:00",
+     "end": "2125-12-31T00:00:00",
+     "when": "01/25/2024 11:00 - 12/31/2125 00:00",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    },
+    {
+     "title": "Hospitality Tea Time",
+     "category": "event",
+     "start": "2025-07-22T11:00:00",
+     "end": "2125-12-31T00:00:00",
+     "when": "07/22/2025 11:00 - 12/31/2125 00:00",
+     "image": "",
+     "source_name": "bluearchive.wiki",
+     "source_url": "https://bluearchive.wiki/wiki/Events"
+    }
+   ],
+   "upcoming": [
     {
      "title": "Double NormalMissionsrewards",
      "category": "event",
@@ -326,6 +296,16 @@
      "end": "2026-09-17T06:00:00",
      "when": "August 20, 2026 12:00 - September 17, 2026 06:00",
      "image": "images/ce66aa23833df6dcb4b5d9b569582dc456791ad9.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
+    },
+    {
+     "title": "New Manager Attendance Check Event",
+     "category": "event",
+     "start": null,
+     "end": "2026-09-30T00:00:00",
+     "when": "Initial Account Creation - 30 Days after Account Creation",
+     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
      "source_name": "limbuscompany.wiki.gg",
      "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
     }

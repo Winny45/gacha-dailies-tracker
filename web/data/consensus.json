@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31T13:14:15.596515+00:00",
+ "generated_at": "2026-09-01T11:25:31.663117+00:00",
  "verdicts": {
   "brown_dust_2:dalvi bright moon": {
    "label": "Situational",
@@ -134,16 +134,6 @@
      "cons": []
     }
    ]
-  },
-  "blue_archive:niko": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": []
-  },
-  "blue_archive:kurumi": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": []
   },
   "blue_archive:sumire part timer rerun": {
    "label": "Situational",
