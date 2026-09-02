@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T11:25:31.662520+00:00",
+ "generated_at": "2026-09-02T10:59:08.899203+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -64,21 +64,11 @@
   "blue_archive": {
    "current": [
     {
-     "title": "DoubleSchedulerewards",
+     "title": "Double NormalMissionsrewards",
      "category": "event",
-     "start": "2026-08-26T04:00:00",
-     "end": "2026-09-02T03:59:00",
-     "when": "08/26/2026 04:00 - 09/02/2026 03:59",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
-    {
-     "title": "DoubleScrimmagerewards",
-     "category": "event",
-     "start": "2026-08-26T04:00:00",
-     "end": "2026-09-02T03:59:00",
-     "when": "08/26/2026 04:00 - 09/02/2026 03:59",
+     "start": "2026-09-02T04:00:00",
+     "end": "2026-09-06T03:59:00",
+     "when": "09/02/2026 04:00 - 09/06/2026 03:59",
      "image": "",
      "source_name": "bluearchive.wiki",
      "source_url": "https://bluearchive.wiki/wiki/Events"
@@ -185,16 +175,6 @@
     }
    ],
    "upcoming": [
-    {
-     "title": "Double NormalMissionsrewards",
-     "category": "event",
-     "start": "2026-09-02T04:00:00",
-     "end": "2026-09-06T03:59:00",
-     "when": "09/02/2026 04:00 - 09/06/2026 03:59",
-     "image": "",
-     "source_name": "bluearchive.wiki",
-     "source_url": "https://bluearchive.wiki/wiki/Events"
-    },
     {
      "title": "Double level EXP",
      "category": "event",
