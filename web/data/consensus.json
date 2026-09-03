@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-02T10:59:08.899575+00:00",
+ "generated_at": "2026-09-03T10:57:52.857502+00:00",
  "verdicts": {
   "brown_dust_2:dalvi bright moon": {
    "label": "Situational",
@@ -269,33 +269,15 @@
     }
    ]
   },
-  "limbus:cinq assoc east section 3 hong lu": {
-   "label": "Good Pull",
-   "score": 4.0,
-   "sources": [
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "8/10",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
+  "limbus:move in reg gregor": {
+   "label": "No consensus data",
+   "score": null,
+   "sources": []
   },
-  "limbus:everlasting faust": {
-   "label": "Strong Pull",
-   "score": 4.5,
-   "sources": [
-    {
-     "name": "Pocket Tactics",
-     "url": "https://www.pockettactics.com/limbus-company/tier-list",
-     "verdict": "S",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
+  "limbus:contempt awe ry sh": {
+   "label": "No consensus data",
+   "score": null,
+   "sources": []
   }
  }
 }
