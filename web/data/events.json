@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-02T10:59:08.899203+00:00",
+ "generated_at": "2026-09-03T10:57:52.796227+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -240,26 +240,6 @@
   "limbus": {
    "current": [
     {
-     "title": "Cinq Assoc. East Section 3 Hong Lu",
-     "category": "banner",
-     "start": "2026-08-20T12:00:00",
-     "end": "2026-09-03T10:00:00",
-     "when": "2026.8.20 12:00 - 2026.9.3 10:00",
-     "image": "images/399855c0b44412fa7c7448768e827532ba06c699.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
-    {
-     "title": "Everlasting Faust",
-     "category": "banner",
-     "start": "2026-08-20T12:00:00",
-     "end": "2026-09-03T10:00:00",
-     "when": "2026.8.20 12:00 - 2026.9.3 10:00",
-     "image": "images/1af1d9e3b9fa034edd3faa2f334288e2608105dd.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
-    {
      "title": "Daily Check-in",
      "category": "event",
      "start": "2026-08-20T00:00:00",
@@ -290,7 +270,28 @@
      "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
     }
    ],
-   "upcoming": []
+   "upcoming": [
+    {
+     "title": "Move-in Reg. Gregor",
+     "category": "banner",
+     "start": "2026-09-03T12:00:00",
+     "end": "2026-09-17T10:00:00",
+     "when": "2026.9.3 12:00 - 2026.9.17 10:00",
+     "image": "images/4f3e3718c9659a5b70247a5f8af16be974f8ea7f.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "Contempt, Awe Ry\u014dsh\u016b",
+     "category": "banner",
+     "start": "2026-09-03T12:00:00",
+     "end": "2026-09-17T10:00:00",
+     "when": "2026.9.3 12:00 - 2026.9.17 10:00",
+     "image": "images/3d0659f271aef3f673bb2e9a4daae89e7225a795.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    }
+   ]
   }
  }
 }
