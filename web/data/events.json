@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-03T10:57:52.796227+00:00",
+ "generated_at": "2026-09-04T10:58:14.496436+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -260,18 +260,6 @@
      "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
     },
     {
-     "title": "New Manager Attendance Check Event",
-     "category": "event",
-     "start": null,
-     "end": "2026-09-30T00:00:00",
-     "when": "Initial Account Creation - 30 Days after Account Creation",
-     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
-    }
-   ],
-   "upcoming": [
-    {
      "title": "Move-in Reg. Gregor",
      "category": "banner",
      "start": "2026-09-03T12:00:00",
@@ -290,8 +278,19 @@
      "image": "images/3d0659f271aef3f673bb2e9a4daae89e7225a795.png",
      "source_name": "limbuscompany.wiki.gg",
      "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "New Manager Attendance Check Event",
+     "category": "event",
+     "start": null,
+     "end": "2026-09-30T00:00:00",
+     "when": "Initial Account Creation - 30 Days after Account Creation",
+     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
     }
-   ]
+   ],
+   "upcoming": []
   }
  }
 }
