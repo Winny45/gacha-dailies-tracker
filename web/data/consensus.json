@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-07T12:04:48.365550+00:00",
+ "generated_at": "2026-09-08T10:57:37.742289+00:00",
  "verdicts": {
   "brown_dust_2:dalvi bright moon": {
    "label": "Situational",
@@ -101,7 +101,7 @@
   },
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
-   "score": 3.0,
+   "score": 2.65,
    "sources": [
     {
      "name": "hostedgg.com",
@@ -115,6 +115,14 @@
      "name": "Pocket Tactics",
      "url": "https://www.pockettactics.com/nikke/tier-list",
      "verdict": "B",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/nikke/tier-list",
+     "verdict": "C",
      "analysis": "",
      "pros": [],
      "cons": []
