@@ -1,28 +1,8 @@
 {
- "generated_at": "2026-09-08T10:57:37.741603+00:00",
+ "generated_at": "2026-09-09T11:02:21.827244+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
-    {
-     "title": "Dalvi -- Bright Moon",
-     "category": "banner",
-     "start": "2026-08-13T00:00:00",
-     "end": "2026-09-09T00:00:00",
-     "when": "2026-08-13 - 2026-09-09 (28 days)",
-     "image": "images/641d2210ae1de0afecf1a936198fcfc48c951bb4.jpg",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    },
-    {
-     "title": "Aquila -- Savage Warrior",
-     "category": "banner",
-     "start": "2026-08-27T00:00:00",
-     "end": "2026-09-09T00:00:00",
-     "when": "2026-08-27 - 2026-09-09 (14 days)",
-     "image": "images/b94e17f535a338bd9b8c44e182912960d53d00c4.jpg",
-     "source_name": "gamependium.com",
-     "source_url": "http://cymmina.gamependium.com/browndust2/banners.html"
-    },
     {
      "title": "Blade -- Young Lady",
      "category": "banner",
@@ -44,7 +24,7 @@
      "start": "2026-08-13T00:00:00",
      "end": null,
      "when": "Starts 2026-08-13",
-     "image": "images/9df9b52a63571024a6bf0c00d0d9825340cb2857.webp",
+     "image": "",
      "source_name": "hostedgg.com",
      "source_url": "https://hostedgg.com/wiki/nikke/banners"
     },
@@ -54,7 +34,7 @@
      "start": "2026-08-13T00:00:00",
      "end": null,
      "when": "Starts 2026-08-13",
-     "image": "images/d2127017a1ed977bafcbddc8c378df1f0b8ae6e1.webp",
+     "image": "",
      "source_name": "hostedgg.com",
      "source_url": "https://hostedgg.com/wiki/nikke/banners"
     }
