@@ -1,68 +1,6 @@
 {
- "generated_at": "2026-09-08T10:57:37.742289+00:00",
+ "generated_at": "2026-09-09T11:02:21.827824+00:00",
  "verdicts": {
-  "brown_dust_2:dalvi bright moon": {
-   "label": "Situational",
-   "score": 2.5,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "FH/GR Regular",
-     "analysis": "2-hit attack over 3 tiles vertical + stacking bleed, up to 2 free casts on the following player turns.  Essential for building stacks to charge up Tricky Lover.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "Situational",
-     "analysis": "It is a rotational costume for Dalvi, which is needed for her full rotation. Otherwise the impact of this costume is not that big. If you have Tricky Lady Dalvi consider getting this costume to +1.\n\nBy mode -- GR: Good, FH: Good, LN: Bad, TOS: Niche, MW: Niche, GC: Bad, GEN: Niche",
-     "pros": [
-      "Rotational Costume for Dalvi"
-     ],
-     "cons": [
-      "Mediocre Aoe"
-     ]
-    }
-   ]
-  },
-  "brown_dust_2:aquila savage warrior": {
-   "label": "Situational",
-   "score": 3.25,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "FH/GR Regular",
-     "analysis": "Stacking ATK buff when struck + 3-hit attack.  CD decreases by 2 with every hit she takes for 2 turns.  Buff improves at +3 and +5.  Needs to be hit 4 times to use every turn.  The range is too weird be useful for anything other than FH/GR, potentially very strong depending on future costumes. Random",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "Pocket Gamer",
-     "url": "https://www.pocketgamer.com/brown-dust-2/tier-list/",
-     "verdict": "A Tier",
-     "analysis": "Hit-reactive bruiser that scales massive ATK stacks (up to 99x) and reduces costume cooldowns when attacked. Specialized multi-hit Fiend Hunt boss counter.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "Situational",
-     "analysis": "At the moment the only way to have her be active each turn is via at least 4-Hit attacks from the enemy, which does not happen every time. Since she will be a new DPS, it is quite hard to predict how good a character overall will be. Pull +5 if you are planning to build Aquila, otherwise stop at lower breakpoints.<br><br><i>Make sure to recruit her from <b>pub</b> (any Chapter) for free 10 Draw Tickets.</i>\n\nBy mode -- GR: Good, FH: Good, LN: Niche, TOS: Niche, MW: Bad, GC: Niche, GEN: Niche",
-     "pros": [
-      "Self-Buffer",
-      "Decent Damage"
-     ],
-     "cons": [
-      "Questionable AoE",
-      "Depentend on enemy multi-attacks"
-     ]
-    }
-   ]
-  },
   "brown_dust_2:blade young lady": {
    "label": "Strong Pull",
    "score": 4.333333333333333,
@@ -101,7 +39,7 @@
   },
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
-   "score": 2.65,
+   "score": 3.0,
    "sources": [
     {
      "name": "hostedgg.com",
@@ -118,34 +56,18 @@
      "analysis": "",
      "pros": [],
      "cons": []
-    },
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/nikke/tier-list",
-     "verdict": "C",
-     "analysis": "",
-     "pros": [],
-     "cons": []
     }
    ]
   },
   "nikke:persona collab yukiko": {
-   "label": "Good Pull",
-   "score": 3.9,
+   "label": "No consensus data",
+   "score": null,
    "sources": [
     {
      "name": "hostedgg.com",
      "url": "https://hostedgg.com/wiki/nikke/banners",
      "verdict": "",
      "analysis": "The second collab limited SSR, a Fire Code Attacker with a machine gun. Same logic as Queen: limited collab units are a now-or-never pull, so prioritize whichever fits your squad rather than splitting a small reserve across both.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/nikke/tier-list",
-     "verdict": "A",
-     "analysis": "",
      "pros": [],
      "cons": []
     }
