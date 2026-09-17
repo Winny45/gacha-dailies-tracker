@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-16T11:13:19.713593+00:00",
+ "generated_at": "2026-09-17T11:21:12.263689+00:00",
  "verdicts": {
   "brown_dust_2:blade young lady": {
    "label": "Strong Pull",
@@ -207,15 +207,24 @@
     }
    ]
   },
-  "limbus:move in reg gregor": {
+  "limbus:haute couture boutique du rouge ishmael": {
    "label": "No consensus data",
    "score": null,
    "sources": []
   },
-  "limbus:contempt awe ry sh": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": []
+  "limbus:crushbound past meursault": {
+   "label": "Strong Pull",
+   "score": 5.0,
+   "sources": [
+    {
+     "name": "Pocket Tactics",
+     "url": "https://www.pockettactics.com/limbus-company/tier-list",
+     "verdict": "SS",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
   }
  }
 }
