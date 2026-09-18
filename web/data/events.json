@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T11:21:12.263149+00:00",
+ "generated_at": "2026-09-18T10:55:32.941409+00:00",
  "games": {
   "brown_dust_2": {
    "current": [
@@ -228,9 +228,7 @@
      "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
      "source_name": "limbuscompany.wiki.gg",
      "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
-    }
-   ],
-   "upcoming": [
+    },
     {
      "title": "Haute Couture::Boutique du Rouge Ishmael",
      "category": "banner",
@@ -251,7 +249,8 @@
      "source_name": "limbuscompany.wiki.gg",
      "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
     }
-   ]
+   ],
+   "upcoming": []
   }
  }
 }
