@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22T11:17:27.499403+00:00",
+ "generated_at": "2026-09-23T11:11:09.103748+00:00",
  "verdicts": {
   "brown_dust_2:blade young lady": {
    "label": "Strong Pull",
@@ -208,9 +208,18 @@
    ]
   },
   "limbus:haute couture boutique du rouge ishmael": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": []
+   "label": "Strong Pull",
+   "score": 4.5,
+   "sources": [
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/limbus-company/tier-list",
+     "verdict": "9/10",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
   },
   "limbus:crushbound past meursault": {
    "label": "Strong Pull",
