@@ -1,42 +1,6 @@
 {
- "generated_at": "2026-09-23T11:11:09.103748+00:00",
+ "generated_at": "2026-09-24T11:26:54.222775+00:00",
  "verdicts": {
-  "brown_dust_2:blade young lady": {
-   "label": "Strong Pull",
-   "score": 4.333333333333333,
-   "sources": [
-    {
-     "name": "gamependium.com",
-     "url": "http://cymmina.gamependium.com/browndust2/banners.html",
-     "verdict": "Recommended",
-     "analysis": "4-hit attack over 3x2 (6 tiles), increases to 3x3 with pot.  Applies physical vulnerability on main target.  More damage and range than Cat Eris, but 1 less hit.  Excellent all-round costume.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "Pocket Gamer",
-     "url": "https://www.pocketgamer.com/brown-dust-2/tier-list/",
-     "verdict": "S Tier",
-     "analysis": "Young Lady Blade is a Dark Physical DPS character strong in PvE due to her high AoE damage (300% ATK) and amplification (+150%). She's essential for maximising Blade's potential, particularly with Apostle. However, her low durability makes her less effective in PvP. She's a good choice for PvE and those who enjoy glass cannon playstyles.",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "BD2 Banner Recommendation",
-     "url": "https://zormolo.github.io/BD2-Banner-Recommendation/",
-     "verdict": "Yes ( Recommended )",
-     "analysis": "Great costume for general content, thanks to the 3x3 skill range and good skill damage. Otherwise, this is mostly used as rotational costume, and in extremely rare occasions as amplifier / low-chainer for 1 tile.\n\nBy mode -- GR: Niche, FH: Good, LN: Niche, TOS: Meta, MW: Niche, GC: Good, GEN: Meta",
-     "pros": [
-      "Very good AoE",
-      "Decent Damage",
-      "Amplifier"
-     ],
-     "cons": [
-      "Not the main source for her damage"
-     ]
-    }
-   ]
-  },
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
    "score": 3.0,
