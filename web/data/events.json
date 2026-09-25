@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T11:26:54.222343+00:00",
+ "generated_at": "2026-09-25T11:32:44.449324+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -225,6 +225,16 @@
      "end": "2026-10-01T10:00:00",
      "when": "2026.9.17 12:00 - 2026.10.1 10:00",
      "image": "images/0d040593e18b485022293bec340f53d0d4e09543.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "Haute Couture::Alteration Shop Rodion",
+     "category": "banner",
+     "start": "2026-09-24T12:00:00",
+     "end": "2026-10-08T10:00:00",
+     "when": "2026.9.24 12:00 - 2026.10.8 10:00",
+     "image": "images/ed0cfeaabdcb767a4a7dd2fadf575ea8e2ba5ff7.png",
      "source_name": "limbuscompany.wiki.gg",
      "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
     },

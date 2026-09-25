@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T11:26:54.222775+00:00",
+ "generated_at": "2026-09-25T11:32:44.449900+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -184,6 +184,11 @@
      "cons": []
     }
    ]
+  },
+  "limbus:haute couture alteration shop rodion": {
+   "label": "No consensus data",
+   "score": null,
+   "sources": []
   },
   "limbus:crushbound past meursault": {
    "label": "Strong Pull",
