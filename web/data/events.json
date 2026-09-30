@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T12:29:57.112101+00:00",
+ "generated_at": "2026-09-30T12:14:55.716274+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -208,16 +208,6 @@
   },
   "limbus": {
    "current": [
-    {
-     "title": "New Manager Attendance Check Event",
-     "category": "event",
-     "start": null,
-     "end": "2026-09-30T00:00:00",
-     "when": "Initial Account Creation - 30 Days after Account Creation",
-     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
-    },
     {
      "title": "Haute Couture::Boutique du Rouge Ishmael",
      "category": "banner",
