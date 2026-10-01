@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T12:14:55.716666+00:00",
+ "generated_at": "2026-10-01T12:49:42.768774+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -171,20 +171,6 @@
     }
    ]
   },
-  "limbus:haute couture boutique du rouge ishmael": {
-   "label": "Strong Pull",
-   "score": 4.5,
-   "sources": [
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "9/10",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
   "limbus:haute couture alteration shop rodion": {
    "label": "Good Pull",
    "score": 4.0,
@@ -207,6 +193,25 @@
      "name": "Pocket Tactics",
      "url": "https://www.pockettactics.com/limbus-company/tier-list",
      "verdict": "SS",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
+  },
+  "limbus:file target extraction haute couture le noir brand manager don quixote profile png": {
+   "label": "No consensus data",
+   "score": null,
+   "sources": []
+  },
+  "limbus:garden of thorns gregor": {
+   "label": "Strong Pull",
+   "score": 4.5,
+   "sources": [
+    {
+     "name": "Pocket Tactics",
+     "url": "https://www.pockettactics.com/limbus-company/tier-list",
+     "verdict": "S",
      "analysis": "",
      "pros": [],
      "cons": []
