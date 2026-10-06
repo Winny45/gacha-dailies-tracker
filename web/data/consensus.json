@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T14:09:10.114630+00:00",
+ "generated_at": "2026-10-06T13:06:10.141269+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -200,9 +200,18 @@
    ]
   },
   "limbus:haute couture le noir brand manager don quixote": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": []
+   "label": "Strong Pull",
+   "score": 4.75,
+   "sources": [
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/limbus-company/tier-list",
+     "verdict": "9.5/10",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
   },
   "limbus:garden of thorns gregor": {
    "label": "Strong Pull",
