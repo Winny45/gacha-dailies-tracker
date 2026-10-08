@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T13:00:44.639523+00:00",
+ "generated_at": "2026-10-08T13:08:07.760489+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -165,34 +165,6 @@
      "name": "Pocket Tactics",
      "url": "https://www.pockettactics.com/blue-archive/tier-list",
      "verdict": "B",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:haute couture alteration shop rodion": {
-   "label": "Good Pull",
-   "score": 4.0,
-   "sources": [
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "8/10",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:crushbound past meursault": {
-   "label": "Strong Pull",
-   "score": 5.0,
-   "sources": [
-    {
-     "name": "Pocket Tactics",
-     "url": "https://www.pockettactics.com/limbus-company/tier-list",
-     "verdict": "SS",
      "analysis": "",
      "pros": [],
      "cons": []

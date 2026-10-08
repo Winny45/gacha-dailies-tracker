@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T13:00:44.639037+00:00",
+ "generated_at": "2026-10-08T13:08:07.760105+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -208,26 +208,6 @@
   },
   "limbus": {
    "current": [
-    {
-     "title": "Haute Couture::Alteration Shop Rodion",
-     "category": "banner",
-     "start": "2026-09-24T12:00:00",
-     "end": "2026-10-08T10:00:00",
-     "when": "2026.9.24 12:00 - 2026.10.8 10:00",
-     "image": "images/ed0cfeaabdcb767a4a7dd2fadf575ea8e2ba5ff7.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
-    {
-     "title": "Crushbound Past Meursault",
-     "category": "banner",
-     "start": "2026-09-17T12:00:00",
-     "end": "2026-10-08T10:00:00",
-     "when": "2026.9.17 12:00 - 2026.10.8 10:00",
-     "image": "images/1af1d9e3b9fa034edd3faa2f334288e2608105dd.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
     {
      "title": "Haute Couture::Le Noir Brand Manager Don Quixote",
      "category": "banner",
