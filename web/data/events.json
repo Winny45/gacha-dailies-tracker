@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T11:31:46.688510+00:00",
+ "generated_at": "2026-10-15T11:09:52.948297+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -209,26 +209,6 @@
   "limbus": {
    "current": [
     {
-     "title": "Haute Couture::Le Noir Brand Manager Don Quixote",
-     "category": "banner",
-     "start": "2026-10-01T12:00:00",
-     "end": "2026-10-15T10:00:00",
-     "when": "2026.10.1 12:00 - 2026.10.15 10:00",
-     "image": "images/368dd60f285b1ba55175cca2c2e94d27259b7f3c.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
-    {
-     "title": "Garden of Thorns Gregor",
-     "category": "banner",
-     "start": "2026-10-01T12:00:00",
-     "end": "2026-10-15T10:00:00",
-     "when": "2026.10.1 12:00 - 2026.10.15 10:00",
-     "image": "images/3d0659f271aef3f673bb2e9a4daae89e7225a795.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
-    {
      "title": "New Manager Attendance Check Event",
      "category": "event",
      "start": null,
@@ -239,7 +219,38 @@
      "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
     }
    ],
-   "upcoming": []
+   "upcoming": [
+    {
+     "title": "Haute Couture::The Crimson God of Le Rouge Sinclair",
+     "category": "banner",
+     "start": "2026-10-15T12:00:00",
+     "end": "2026-10-29T10:00:00",
+     "when": "2026.10.15 12:00 - 2026.10.29 10:00",
+     "image": "images/88df08e7cf771c4ebd54863808f45058329de911.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "Christmas Nightmare Ishmael",
+     "category": "banner",
+     "start": "2026-10-15T12:00:00",
+     "end": "2026-10-29T10:00:00",
+     "when": "2026.10.15 12:00 - 2026.10.29 10:00",
+     "image": "images/1af1d9e3b9fa034edd3faa2f334288e2608105dd.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "The Ring Fauvist Docent Rodion",
+     "category": "banner",
+     "start": "2026-10-15T12:00:00",
+     "end": "2025-10-29T10:00:00",
+     "when": "2026.10.15 12:00 - 2025.10.29 10:00",
+     "image": "images/6ad6babf9d5c6ee8f60714a124e4ba48f01cca2e.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    }
+   ]
   }
  }
 }
