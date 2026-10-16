@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T11:09:52.948297+00:00",
+ "generated_at": "2026-10-16T11:04:47.038065+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -209,18 +209,6 @@
   "limbus": {
    "current": [
     {
-     "title": "New Manager Attendance Check Event",
-     "category": "event",
-     "start": null,
-     "end": "2026-10-30T00:00:00",
-     "when": "Initial Account Creation - 30 Days after Account Creation",
-     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
-    }
-   ],
-   "upcoming": [
-    {
      "title": "Haute Couture::The Crimson God of Le Rouge Sinclair",
      "category": "banner",
      "start": "2026-10-15T12:00:00",
@@ -241,16 +229,17 @@
      "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
     },
     {
-     "title": "The Ring Fauvist Docent Rodion",
-     "category": "banner",
-     "start": "2026-10-15T12:00:00",
-     "end": "2025-10-29T10:00:00",
-     "when": "2026.10.15 12:00 - 2025.10.29 10:00",
-     "image": "images/6ad6babf9d5c6ee8f60714a124e4ba48f01cca2e.png",
+     "title": "New Manager Attendance Check Event",
+     "category": "event",
+     "start": null,
+     "end": "2026-10-30T00:00:00",
+     "when": "Initial Account Creation - 30 Days after Account Creation",
+     "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
      "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
     }
-   ]
+   ],
+   "upcoming": []
   }
  }
 }
