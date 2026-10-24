@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:19:11.464627+00:00",
+ "generated_at": "2026-10-24T10:38:31.577026+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -173,12 +173,20 @@
   },
   "limbus:haute couture the crimson god of le rouge sinclair": {
    "label": "Strong Pull",
-   "score": 5.0,
+   "score": 4.875,
    "sources": [
     {
      "name": "Pocket Tactics",
      "url": "https://www.pockettactics.com/limbus-company/tier-list",
      "verdict": "SS",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/limbus-company/tier-list",
+     "verdict": "9.5/10",
      "analysis": "",
      "pros": [],
      "cons": []
