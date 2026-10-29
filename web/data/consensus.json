@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:27:50.310673+00:00",
+ "generated_at": "2026-10-29T12:38:57.265068+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -171,9 +171,36 @@
     }
    ]
   },
-  "limbus:haute couture the crimson god of le rouge sinclair": {
+  "limbus:haute couture le rouge king of needleworks heathcliff": {
+   "label": "No consensus data",
+   "score": null,
+   "sources": []
+  },
+  "limbus:fell bullet yi sang": {
+   "label": "Situational",
+   "score": 3.25,
+   "sources": [
+    {
+     "name": "Pocket Tactics",
+     "url": "https://www.pockettactics.com/limbus-company/tier-list",
+     "verdict": "A",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/limbus-company/tier-list",
+     "verdict": "5/10",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
+  },
+  "limbus:the house of spiders the thumb nursefather rodion": {
    "label": "Strong Pull",
-   "score": 4.875,
+   "score": 5.25,
    "sources": [
     {
      "name": "Pocket Tactics",
@@ -186,21 +213,7 @@
     {
      "name": "Prydwen",
      "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "9.5/10",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:christmas nightmare ishmael": {
-   "label": "Strong Pull",
-   "score": 4.5,
-   "sources": [
-    {
-     "name": "Pocket Tactics",
-     "url": "https://www.pockettactics.com/limbus-company/tier-list",
-     "verdict": "S",
+     "verdict": "11/10",
      "analysis": "",
      "pros": [],
      "cons": []

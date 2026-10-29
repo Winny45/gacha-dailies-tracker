@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:27:50.310332+00:00",
+ "generated_at": "2026-10-29T12:38:57.264568+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -209,26 +209,6 @@
   "limbus": {
    "current": [
     {
-     "title": "Haute Couture::The Crimson God of Le Rouge Sinclair",
-     "category": "banner",
-     "start": "2026-10-15T12:00:00",
-     "end": "2026-10-29T10:00:00",
-     "when": "2026.10.15 12:00 - 2026.10.29 10:00",
-     "image": "images/88df08e7cf771c4ebd54863808f45058329de911.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
-    {
-     "title": "Christmas Nightmare Ishmael",
-     "category": "banner",
-     "start": "2026-10-15T12:00:00",
-     "end": "2026-10-29T10:00:00",
-     "when": "2026.10.15 12:00 - 2026.10.29 10:00",
-     "image": "images/1af1d9e3b9fa034edd3faa2f334288e2608105dd.png",
-     "source_name": "limbuscompany.wiki.gg",
-     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
-    },
-    {
      "title": "New Manager Attendance Check Event",
      "category": "event",
      "start": null,
@@ -237,6 +217,36 @@
      "image": "images/e26fb9109111fc882e3377fb6048b4442c01528b.png",
      "source_name": "limbuscompany.wiki.gg",
      "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
+    },
+    {
+     "title": "Haute Couture::Le Rouge King of Needleworks Heathcliff",
+     "category": "banner",
+     "start": "2026-10-29T12:00:00",
+     "end": "2026-11-12T10:00:00",
+     "when": "2026.10.29 12:00 - 2026.11.12 10:00",
+     "image": "images/8b321c1c0a4a6a4d269cc36206549bed40b34665.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "Fell Bullet Yi Sang",
+     "category": "banner",
+     "start": "2026-10-29T12:00:00",
+     "end": "2026-11-12T10:00:00",
+     "when": "2026.10.29 12:00 - 2026.11.12 10:00",
+     "image": "images/63eaefca16ad08e55a644458b86cecc63eb1acc3.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "The House of Spiders: The Thumb Nursefather Rodion",
+     "category": "banner",
+     "start": "2026-10-29T12:00:00",
+     "end": "2026-11-12T10:00:00",
+     "when": "2026.10.29 12:00 - 2026.11.12 10:00",
+     "image": "images/58ca4e01750fa91fa8827368d4871afcfa407c2b.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
     }
    ],
    "upcoming": []
