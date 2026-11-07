@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T14:00:21.073662+00:00",
+ "generated_at": "2026-11-07T12:44:30.475386+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -172,9 +172,18 @@
    ]
   },
   "limbus:haute couture le rouge king of needleworks heathcliff": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": []
+   "label": "Strong Pull",
+   "score": 4.5,
+   "sources": [
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/limbus-company/tier-list",
+     "verdict": "9/10",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
   },
   "limbus:fell bullet yi sang": {
    "label": "Situational",
