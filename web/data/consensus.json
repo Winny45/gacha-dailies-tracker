@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T13:53:23.257059+00:00",
+ "generated_at": "2026-11-12T14:54:39.809796+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -165,64 +165,6 @@
      "name": "Pocket Tactics",
      "url": "https://www.pockettactics.com/blue-archive/tier-list",
      "verdict": "B",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:haute couture le rouge king of needleworks heathcliff": {
-   "label": "Strong Pull",
-   "score": 4.5,
-   "sources": [
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "9/10",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:fell bullet yi sang": {
-   "label": "Situational",
-   "score": 3.25,
-   "sources": [
-    {
-     "name": "Pocket Tactics",
-     "url": "https://www.pockettactics.com/limbus-company/tier-list",
-     "verdict": "A",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "5/10",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:the house of spiders the thumb nursefather rodion": {
-   "label": "Strong Pull",
-   "score": 5.25,
-   "sources": [
-    {
-     "name": "Pocket Tactics",
-     "url": "https://www.pockettactics.com/limbus-company/tier-list",
-     "verdict": "SS",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    },
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "11/10",
      "analysis": "",
      "pros": [],
      "cons": []
