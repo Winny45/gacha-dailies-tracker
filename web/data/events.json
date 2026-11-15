@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T13:15:36.244202+00:00",
+ "generated_at": "2026-11-15T13:44:23.819581+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -208,6 +208,26 @@
   },
   "limbus": {
    "current": [
+    {
+     "title": "Wedge Office Fixer Don Quixote",
+     "category": "banner",
+     "start": "2026-11-12T12:00:00",
+     "end": "2026-11-26T10:00:00",
+     "when": "2026.11.12 12:00 - 2026.11.26 10:00",
+     "image": "images/0229fa0519d9e80af2f93116dcc43b79a8f67f5a.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
+    {
+     "title": "Magic Bullet Outis",
+     "category": "banner",
+     "start": "2026-11-12T12:00:00",
+     "end": "2026-11-26T10:00:00",
+     "when": "2026.11.12 12:00 - 2026.11.26 10:00",
+     "image": "images/63eaefca16ad08e55a644458b86cecc63eb1acc3.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Extraction/Banner_History"
+    },
     {
      "title": "New Manager Attendance Check Event",
      "category": "event",
