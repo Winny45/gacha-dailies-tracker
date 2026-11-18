@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T15:45:20.580009+00:00",
+ "generated_at": "2026-11-18T15:25:24.600153+00:00",
  "games": {
   "brown_dust_2": {
    "current": [],
@@ -208,6 +208,26 @@
   },
   "limbus": {
    "current": [
+    {
+     "title": "The Wedge in the Wake of Dawnbreak",
+     "category": "event",
+     "start": "2026-11-12T00:00:00",
+     "end": "2026-11-26T00:00:00",
+     "when": "November 12, 2026 - November 26, 2026",
+     "image": "images/7aa2babb2bc02bff8a5132fb1d94597def3366f9.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
+    },
+    {
+     "title": "The Wedge in the Wake of Dawnbreak",
+     "category": "event",
+     "start": "2026-11-12T00:00:00",
+     "end": "2026-11-26T00:00:00",
+     "when": "November 12th, 2026 - November 26th, 2026",
+     "image": "images/7aa2babb2bc02bff8a5132fb1d94597def3366f9.png",
+     "source_name": "limbuscompany.wiki.gg",
+     "source_url": "https://limbuscompany.wiki.gg/wiki/Events"
+    },
     {
      "title": "Wedge Office Fixer Don Quixote",
      "category": "banner",
