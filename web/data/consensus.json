@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T15:31:34.804956+00:00",
+ "generated_at": "2026-11-20T15:09:38.462213+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -172,9 +172,18 @@
    ]
   },
   "limbus:wedge office fixer don quixote": {
-   "label": "No consensus data",
-   "score": null,
-   "sources": []
+   "label": "Strong Pull",
+   "score": 5.0,
+   "sources": [
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/limbus-company/tier-list",
+     "verdict": "10/10",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
   },
   "limbus:magic bullet outis": {
    "label": "Strong Pull",
