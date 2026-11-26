@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T16:59:03.472135+00:00",
+ "generated_at": "2026-11-26T16:40:05.694512+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -165,34 +165,6 @@
      "name": "Pocket Tactics",
      "url": "https://www.pockettactics.com/blue-archive/tier-list",
      "verdict": "B",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:wedge office fixer don quixote": {
-   "label": "Strong Pull",
-   "score": 5.0,
-   "sources": [
-    {
-     "name": "Prydwen",
-     "url": "https://www.prydwen.gg/limbus-company/tier-list",
-     "verdict": "10/10",
-     "analysis": "",
-     "pros": [],
-     "cons": []
-    }
-   ]
-  },
-  "limbus:magic bullet outis": {
-   "label": "Strong Pull",
-   "score": 5.0,
-   "sources": [
-    {
-     "name": "Pocket Tactics",
-     "url": "https://www.pockettactics.com/limbus-company/tier-list",
-     "verdict": "SS",
      "analysis": "",
      "pros": [],
      "cons": []
