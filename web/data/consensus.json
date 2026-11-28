@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T16:25:12.466773+00:00",
+ "generated_at": "2026-11-28T15:18:08.141324+00:00",
  "verdicts": {
   "nikke:persona collab queen makoto nijima": {
    "label": "Situational",
@@ -165,6 +165,47 @@
      "name": "Pocket Tactics",
      "url": "https://www.pockettactics.com/blue-archive/tier-list",
      "verdict": "B",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
+  },
+  "limbus:haute couture le rouge b2f skein nest gregor": {
+   "label": "No consensus data",
+   "score": null,
+   "sources": []
+  },
+  "limbus:indicant s trial rodion": {
+   "label": "Good Pull",
+   "score": 4.0,
+   "sources": [
+    {
+     "name": "Pocket Tactics",
+     "url": "https://www.pockettactics.com/limbus-company/tier-list",
+     "verdict": "A",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    }
+   ]
+  },
+  "limbus:the house of spiders the middle nursefather outis": {
+   "label": "Strong Pull",
+   "score": 5.25,
+   "sources": [
+    {
+     "name": "Pocket Tactics",
+     "url": "https://www.pockettactics.com/limbus-company/tier-list",
+     "verdict": "SS",
+     "analysis": "",
+     "pros": [],
+     "cons": []
+    },
+    {
+     "name": "Prydwen",
+     "url": "https://www.prydwen.gg/limbus-company/tier-list",
+     "verdict": "11/10",
      "analysis": "",
      "pros": [],
      "cons": []
